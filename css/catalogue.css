@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 0.9rem;
+}
+
+.card-img-top {
+    max-height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.text-muted {
+    font-size: 0.8rem;
+    color: #6c757d;
+}
+
+/* Styles du filtrage */
+.filter-section {
+    margin-bottom: 30px;
+}
+
+/* Visibilité simulée des filtres */
+.product {
+    display: block; /* Par défaut, tous les produits sont visibles */
+}
+
+/* Exemple de filtre de catégories */
+.filter-1, .filter-2 {
+    display: none;
+}
+
+/* Animation de survol de la carte */
+.card:hover {
+    transform: translateY(-10px);
+}
