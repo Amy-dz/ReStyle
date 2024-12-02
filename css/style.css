@@ -7,8 +7,12 @@ body {
   font-family: "Barlow Condensed", sans-serif;
 }
 
+/***************************************************************** NAVBARR ***********************************************************/
+/***************************************************************** NAVBARR ***********************************************************/
+/***************************************************************** NAVBARR ***********************************************************/
+
 .navbar {
-  background-color: #f4c5e5cb !important;
+  background-color: #ffffffc8 !important;
 }
 
 .nav-link {
@@ -16,12 +20,33 @@ body {
   color: black;
 }
 .nav-link:hover {
-  font-weight: 500;
-  color: rgb(25, 21, 69);
+  color: rgb(0, 0, 0);
+  text-decoration: underline #f70776 2px;
 }
 
+.icnsmenu {
+  color: #000000;
+  font-size: 20px;
+}
+
+.icnsmenu:hover {
+  color: #f70777;
+  font-size: 20px;
+}
+
+.dropdown-item:hover {
+  color: #ffffff;
+  background-color: #f70777;
+}
+/***************************************************************** NAVBARR ***********************************************************/
+/***************************************************************** NAVBARR ***********************************************************/
+/***************************************************************** NAVBARR ***********************************************************/
+/***************************************************************** HERO SECTION ***********************************************************/
+/***************************************************************** HERO SECTION ***********************************************************/
+/***************************************************************** HERO SECTION ***********************************************************/
+
 .parallax {
-  background: url("../img/vetements.jpg") no-repeat;
+  background: url("../img/index/vetements.jpg") no-repeat;
   height: 100vh;
   background-position: center;
   background-attachment: fixed;
@@ -36,7 +61,6 @@ body {
   height: 100vh;
   text-align: center;
   justify-content: center;
-  align-items: center;
 }
 
 .text h1 {
@@ -59,12 +83,39 @@ body {
   width: 50%;
   overflow: hidden;
   align-items: center;
-  justify-content: center;
 }
 
-.herobtn {
+.btnhero {
+  margin-left: 20px;
   color: #ffffff;
-  background-color: #f4c5e5cb;
-  text-align: center;
-  align-items: center;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: #f70776;
+  border-color: #f70776;
+  padding: 10px 40px;
 }
+
+.btnhero:hover {
+  margin-left: 20px;
+  color: #ffffff;
+  background-color: #f707776f;
+  border-color: rgb(255, 255, 255);
+}
+
+.glow-on-hover {
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 0 10px #f70776 !important;
+}
+
+.glow-on-hover:hover {
+  box-shadow: 0 0 20px #f70776 !important;
+  transform: scale(1.05);
+}
+
+/* Optionnel : Arrondi complet pour un style plus moderne */
+.rounded-pill {
+  border-radius: 50px;
+}
+/***************************************************************** HERO SECTION ***********************************************************/
+/***************************************************************** HERO SECTION ***********************************************************/
+/***************************************************************** HERO SECTION ***********************************************************/
