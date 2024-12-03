@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription / Connexion</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Importation des polices */
+        @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bokor&display=swap");
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            font-family: "Barlow Condensed", sans-serif;
+        }
+
+        /* Styles du formulaire */
+        .card {
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+        }
+        
+        .card-header {
+            background-color: #f70776;
+            color: white;
+            font-size: 24px;
+            text-align: center;
+            padding: 10px;
+        }
+        
+        .btn-cta {
+            background-color: #f70776;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        
+        .btn-cta:hover {
+            background-color: #c7005b;
+            transform: scale(1.05);
+        }
+        
+        .form-control {
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+
+        .container {
+            margin-top: 50px;
+        }
+
+        .link {
+            color: #f70776;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .link:hover {
+            text-decoration: underline;
+        }
+
+        .form-footer {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .form-footer a {
+            text-decoration: none;
+        }
+
+        .navbar {
+            background-color: #ffffffc8;
+        }
+
+        .nav-link {
+            font-size: 20px;
+            color: black;
+        }
+
+        .nav-link:hover {
+            color: rgb(0, 0, 0);
+            text-decoration: underline #f70776 2px;
+        }
+        
+        /* Responsive design */
+        @media (max-width: 767px) {
+            .container {
+                margin-top: 20px;
+            }
+
+            .form-control {
+                font-size: 14px;
+            }
+
+            .btn-cta {
+                font-size: 14px;
+            }
+        }
+
+        /* Footer Styles */
+        .rsxx, .infoo, .contactt {
+            font-size: 1.3rem;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .rsxx:hover, .infoo:hover, .contactt:hover {
+            color: #f70776;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="row justify-content-center">
+        <!-- Formulaire d'Inscription -->
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="card">
+                <div class="card-header">
+                    Inscription
+                </div>
+                <form action="#inscriptionModal" method="POST" data-toggle="modal">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="nom" placeholder="Nom" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" id="password" placeholder="Mot de passe" required>
+                    </div>
+                    <button type="submit" class="btn-cta">S'inscrire</button>
+                    <div class="form-footer">
+                        <p>Déjà un compte ? <a href="#connexion" class="link">Se connecter</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Formulaire de Connexion -->
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="card" id="connexion">
+                <div class="card-header">
+                    Connexion
+                </div>
+                <form action="#connexionModal" method="POST" data-toggle="modal">
+                    <div class="form-group">
+                        <input type="email" class="form-control" name="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" name="password" placeholder="Mot de passe" required>
+                    </div>
+                    <button type="submit" class="btn-cta">Se connecter</button>
+                    <div class="form-footer">
+                        <a href="#reinitialiser" class="link">Mot de passe oublié ?</a>
+                        <p>Pas encore inscrit ? <a href="#inscription" class="link">S'inscrire</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal d'inscription réussie -->
+<div class="modal fade" id="inscriptionModal" tabindex="-1" role="dialog" aria-labelledby="inscriptionModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="inscriptionModalLabel">Inscription réussie!</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Félicitations, vous êtes maintenant inscrit !</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn-cta" data-dismiss="modal">OK</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal de connexion réussie -->
+<div class="modal fade" id="connexionModal" tabindex="-1" role="dialog" aria-labelledby="connexionModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="connexionModalLabel">Connexion réussie!</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Bienvenue de retour! Vous êtes maintenant connecté.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn-cta" data-dismiss="modal">OK</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
