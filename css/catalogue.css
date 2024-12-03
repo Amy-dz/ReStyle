@@ -1,62 +1,219 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
-}
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bokor&display=swap");
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  font-family: "Barlow Condensed", sans-serif;
 }
 
-.card {
-    border: none;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-    transition: transform 0.3s ease;
+/***************************************************************** NAVBARR ***********************************************************/
+.navbar {
+  background-color: #ffffffc8 !important;
 }
 
-.card:hover {
-    transform: scale(1.05);
+.nav-link {
+  font-size: 20px;
+  color: black;
+}
+.nav-link:hover {
+  color: rgb(0, 0, 0);
+  text-decoration: underline #f70776 2px;
 }
 
-.card-title {
-    font-size: 1.1rem;
-    font-weight: bold;
+.icnsmenu {
+  color: #000000;
+  font-size: 20px;
 }
 
-.card-text {
-    font-size: 0.9rem;
+.icnsmenu:hover {
+  color: #f70777;
+  font-size: 20px;
 }
 
-.card-img-top {
-    max-height: 200px;
-    object-fit: cover;
-    margin-bottom: 10px;
+.dropdown-item:hover {
+  color: #ffffff;
+  background-color: #f70777;
 }
-
-.text-muted {
-    font-size: 0.8rem;
-    color: #6c757d;
-}
-
-/* Styles du filtrage */
+/***************************************************************** FIN NAVBARR ***********************************************************/
+/* Section des filtres */
 .filter-section {
-    margin-bottom: 30px;
+    background-color: #ffffffc8; /* Blanc transparent */
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 50px;
+  }
+  
+  .filter-section select,
+  .filter-section input {
+    background-color: #333333; /* Fond noir-gris très foncé */
+    color: white; /* Texte blanc */
+    border: 1px solid #f70776; /* Bordure rose */
+  }
+
+  /* Section des filtres : Effet au focus */
+.filter-section select:focus,
+.filter-section input:focus {
+  border-color: #3498db; /* Bordure noire au focus */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.6); /* Ombre sombre au focus */
+
 }
 
-/* Visibilité simulée des filtres */
-.product {
-    display: block; /* Par défaut, tous les produits sont visibles */
+/* Modifier la couleur au survol des éléments de la barre de recherche et des sélecteurs */
+.filter-section select:hover,
+.filter-section input:hover {
+  color: white; /* Texte blanc au survol */
+
+ 
 }
 
-/* Exemple de filtre de catégories */
-.filter-1, .filter-2 {
-    display: none;
-}
+  /* Bouton de recherche avec loupe */
+  #searchbar .btn {
+    background-color: #333333; /* Fond noir */
+    color: #f70776; /* Icône en rose */
+    border: 1px solid #f70776; /* Bordure rose */
+  }
+  
+  #searchbar .btn:hover {
+    background-color: #f70776; /* Fond rose au survol */
+    color: #ffffff; /* Texte blanc au survol */
+    border-color: #f70776; /* Bordure rose inchangée */
+  }
+  
+  /* L'icône loupe */
+  #searchbar .btn i {
+    font-size: 20px;
+  }
+  
+  /* Modifications de la barre de recherche */
+  #searchbar input {
+    background-color: white; /* Fond blanc pour la barre de recherche */
+    color: #333333; /* Texte noir dans la barre de recherche */
+    border: 1px solid #f70776; /* Bordure rose pour la barre de recherche */
+  }
+  
+  #searchbar input:focus {
+    border-color: #3498db; /* Bordure bleue au focus sur la barre de recherche */
 
-/* Animation de survol de la carte */
-.card:hover {
-    transform: translateY(-10px);
-}
+  }
+  
+  /***************************************** Cartes des produits ***************************************************/
+  .product-card {
+    background-color: rgba(255, 255, 255, 0.8); /* Fond blanc transparent */
+    border: 1px solid #f70776; /* Bordure rose autour de la carte */
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Transition sur l'effet de survol */
+  }
+  
+  .product-card:hover {
+    transform: scale(1.05); /* Agrandir l'élément */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Ombre portée au survol */
+  }
+  
+  .product-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #f70776; /* Bordure rose sous l'image */
+  }
+  
+  .product-card-title {
+    font-size: 18px;
+    color: #f70776; /* Titre rose */
+    margin-top: 15px;
+  }
+  
+  .product-price {
+    font-size: 16px;
+    color: #3498db; /* Prix bleu clair */
+    margin-top: 5px;
+  }
+  
+  .category-label {
+    font-size: 14px;
+    color: #333333; /* Catégorie en gris foncé */
+    margin-top: 5px;
+  }
+  
+  .product-condition {
+    font-size: 14px;
+    color: #555; /* Gris pour la condition */
+    margin-top: 5px;
+  }
+  
+  .condition-label {
+    font-weight: bold;
+    color: #27ae60; /* Vert pour l'état */
+  }
+  
+  .actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+  }
+  
+  .btn-favorite {
+    background: none;
+    border: none;
+    color: #f7077771; /* Rose pour l'icône */
+    font-size: 20px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .btn-favorite:hover {
+    color: #c7005b; /* Plus foncé au survol */
+  }
+  
+  .btn-cta {
+    background-color: #f70776; /* Couleur rose */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+ 
+  .btn-cta:hover {
+    background-color: #c7005b; /* Couleur rose foncée */
+    transform: scale(1.05);
+  }
+
+/************************************************************** FOOTER ********************************************************************/
+.rsxx {
+    font-size: 1.3rem;
+    color: #fff;
+    font-size: 2rem;
+  }
+  
+  .rsxx:hover {
+    color: #f70776;
+    font-size: 2rem;
+  }
+  
+  .infoo {
+    font-size: 1.3rem;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .infoo:hover {
+    color: #fff;
+    text-decoration: underline #f70776 3px;
+  }
+  
+  .contactt {
+    font-size: 1.3rem;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .contactt:hover {
+    color: #fff;
+    text-decoration: underline #f70776 3px;
+  }
+/************************************************************** FIN FOOTER ********************************************************************/
+  
