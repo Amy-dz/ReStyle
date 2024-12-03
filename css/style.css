@@ -3,7 +3,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: black;
+  background-color: #1c1c1c;
   font-family: "Barlow Condensed", sans-serif;
 }
 
@@ -13,10 +13,12 @@ body {
 
 .navbar {
   background-color: #ffffffc8 !important;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .nav-link {
-  font-size: 20px;
+  font-size: 23px;
+  font-weight: 500;
   color: black;
 }
 .nav-link:hover {
@@ -59,20 +61,28 @@ body {
   flex-direction: column;
   align-items: flex-start;
   height: 100vh;
-  text-align: center;
   justify-content: center;
 }
 
 .text h1 {
-  color: #ffffff;
-  font-size: 7rem;
+  color: #f70777;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+  font-size: 6rem;
   font-weight: 700;
   margin-left: 20px;
+}
+
+.text h2 {
+  color: #f70776;
+  font-size: 2rem;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .text p {
   font-size: 1.5rem;
   margin-left: 20px;
+  margin-right: 20px;
 }
 
 .hero {
@@ -80,7 +90,7 @@ body {
   flex-direction: row;
   color: white;
   background-color: rgba(0, 0, 0, 0.686);
-  width: 50%;
+  width: 60%;
   overflow: hidden;
   align-items: center;
 }
@@ -112,10 +122,227 @@ body {
   transform: scale(1.05);
 }
 
-/* Optionnel : Arrondi complet pour un style plus moderne */
-.rounded-pill {
-  border-radius: 50px;
+@media (max-width: 768px) {
+  .text h1 {
+    font-size: 5rem;
+    margin-left: 20px;
+  }
+
+  .text h2 {
+    font-size: 1.3rem;
+    margin-left: 20px;
+    margin-right: 10px;
+  }
+
+  .text p {
+    font-size: 1.2rem;
+    margin-left: 20px;
+    margin-right: 30px;
+  }
+  .hero {
+    width: 100%;
+  }
+  .btnhero {
+    margin-left: 20%;
+  }
+  .btnhero:hover {
+    margin-left: 20%;
+  }
 }
+
 /***************************************************************** HERO SECTION ***********************************************************/
 /***************************************************************** HERO SECTION ***********************************************************/
 /***************************************************************** HERO SECTION ***********************************************************/
+
+.carousel-inner img {
+  height: 50vh; /* Hauteur limitée à 50% de la fenêtre */
+  object-fit: cover; /* Garde les proportions de l'image */
+}
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.6); /* Fond sombre pour le texte */
+  top: 0; /* Position en haut */
+  bottom: 0; /* Position en bas */
+  left: 0; /* Position à gauche */
+  right: 0; /* Position à droite */
+  display: flex; /* Active le modèle de boîte flexible */
+  align-items: center; /* Centre verticalement */
+  justify-content: center; /* Centre horizontalement */
+  text-align: center; /* Centre le texte */
+  color: #fff; /* Couleur blanche pour le texte */
+  padding: 1rem; /* Ajoute un peu d'espace autour du texte */
+}
+
+.sect-carousel .carousel-indicators button {
+  background-color: #f70776 !important;
+}
+
+h2,
+p {
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+}
+
+.carousel-caption h5 {
+  font-size: 3rem;
+}
+
+.carousel-caption p {
+  font-size: 1.5rem;
+}
+
+.textcarous {
+  color: #ffffff !important;
+  padding-top: 9%;
+}
+
+.carousel-control-prev-icon {
+  background-image: url("../img/index/arrow1.svg");
+}
+
+.carousel-control-next-icon {
+  background-image: url("../img/index/arrow.svg");
+}
+
+/* Ajustements pour tablettes */
+@media (max-width: 768px) {
+  .carousel-caption h5 {
+    font-size: 1.5rem;
+  }
+  .carousel-caption p {
+    font-size: 0.8rem;
+  }
+}
+
+/* Ajustements pour mobiles */
+@media (max-width: 576px) {
+  .carousel-caption h5 {
+    font-size: 1.2rem;
+  }
+  .carousel-caption p {
+    font-size: 0.7rem;
+  }
+}
+/************************************************************* TUILES *******************************************************/
+.parallaxv {
+  background: url("../img/index/parallaxv.jpg") no-repeat;
+  height: 50px;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.tile {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border: 2px solid #ffffff;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.tile::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.614); /* Filtre noir avec opacité à 50% */
+  z-index: 1;
+}
+
+.tile h3 {
+  position: relative;
+  z-index: 2; /* Le texte est au-dessus du filtre */
+}
+
+.tile:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);
+}
+
+.h2t {
+  font-size: 3rem;
+  color: #f70776;
+}
+
+/************************************************************** FOOTERRRR ********************************************************************/
+
+.rsxx {
+  font-size: 1.3rem;
+  color: #fff;
+  font-size: 2rem;
+}
+
+.rsxx:hover {
+  color: #f70776;
+  font-size: 2rem;
+}
+
+.infoo {
+  font-size: 1.3rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+.infoo:hover {
+  color: #fff;
+  text-decoration: underline #f70776 3px;
+}
+
+.contactt {
+  font-size: 1.3rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+.contactt:hover {
+  color: #fff;
+  text-decoration: underline #f70776 3px;
+}
+
+/************************************************************** FINFOOTERRRR ********************************************************************/
+.newsletter-section {
+  background: linear-gradient(135deg, #f70776, #ff89b5);
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.newsletter-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.newsletter-section p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.newsletter-section input[type="email"] {
+  border-radius: 30px;
+  padding: 15px;
+}
+
+.newsletter-section button {
+  background-color: white;
+  color: #f70776;
+  font-weight: bold;
+  border-radius: 30px;
+  padding: 10px 30px;
+}
+
+.newsletter-section button:hover {
+  background-color: #f70776;
+  color: white;
+}
