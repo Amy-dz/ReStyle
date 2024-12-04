@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bokor&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #1c1c1c;
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+/***************************************************************** NAVBARR ***********************************************************/
+/***************************************************************** NAVBARR ***********************************************************/
+/***************************************************************** NAVBARR ***********************************************************/
+
+.navbar {
+  background-color: #ffffffc8 !important;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav-link {
+  font-size: 23px;
+  font-weight: 500;
+  color: black;
+}
+.nav-link:hover {
+  color: rgb(0, 0, 0);
+  text-decoration: underline #f70776 2px;
+}
+
+.icnsmenu {
+  color: #000000;
+  font-size: 20px;
+}
+
+.icnsmenu:hover {
+  color: #f70777;
+  font-size: 20px;
+}
+
+.dropdown-item:hover {
+  color: #ffffff;
+  background-color: #f70777;
+}
+/***************************************************************** NAVBARR ***********************************************************/
+/***************************************************************** NAVBARR ***********************************************************/
+/***************************************************************** NAVBARR ***********************************************************/
+.parallaxv {
+  background: url("../img/index/parallaxv.jpg") no-repeat;
+  height: 50px;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  overflow: hidden;
+}
+
+/************************************************************** FOOTERRRR ********************************************************************/
+
+.rsxx {
+  font-size: 1.3rem;
+  color: #fff;
+  font-size: 2rem;
+}
+
+.rsxx:hover {
+  color: #f70776;
+  font-size: 2rem;
+}
+
+.infoo {
+  font-size: 1.3rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+.infoo:hover {
+  color: #fff;
+  text-decoration: underline #f70776 3px;
+}
+
+.contactt {
+  font-size: 1.3rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+.contactt:hover {
+  color: #fff;
+  text-decoration: underline #f70776 3px;
+}
+
+/************************************************************** FINFOOTERRRR ********************************************************************/
+
+.pfp {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+}
+
+.card {
+  border-radius: 8px;
+}
+
+.card-header {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.rounded-circle:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+.card:hover {
+  transform: scale(1.02);
+  transition: transform 0.3s ease-in-out;
+}
