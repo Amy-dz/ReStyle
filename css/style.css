@@ -292,40 +292,48 @@ p {
 
 /************************************************************** FOOTERRRR ********************************************************************/
 
-.rsxx {
-  font-size: 1.3rem;
-  color: #fff;
-  font-size: 2rem;
+.footer-link {
+  color: #ddd;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
-.rsxx:hover {
+.footer-link:hover {
   color: #f70776;
-  font-size: 2rem;
+  animation: animate__fadeIn; /* Animation au survol */
 }
 
-.infoo {
-  font-size: 1.3rem;
-  color: #fff;
+.footer-icon {
+  display: inline-block;
+  color: #ddd;
+  font-size: 1.5rem;
+  margin-right: 10px;
+  transition: color 0.3s ease;
+}
+
+.footer-icon:hover {
+  color: #f70776;
+  animation: animate__pulse; /* Durée de l'animation */
+}
+
+.mailtel a {
   text-decoration: none;
+  color: #ffffff; /* Couleur par défaut */
+  transition: color 0.3s; /* Animation au survol */
 }
 
-.infoo:hover {
-  color: #fff;
-  text-decoration: underline #f70776 3px;
+.mailtel a:hover {
+  text-decoration: underline;
+  text-decoration-color: #f70776;
 }
 
-.contactt {
-  font-size: 1.3rem;
-  color: #fff;
-  text-decoration: none;
-}
-
-.contactt:hover {
-  color: #fff;
-  text-decoration: underline #f70776 3px;
+.footerh5 {
+  color: #f70776;
+  font-weight: 600;
 }
 
 /************************************************************** FINFOOTERRRR ********************************************************************/
+
 .newsletter-section {
   background: linear-gradient(135deg, #f70776, #ff89b5);
   color: white;
