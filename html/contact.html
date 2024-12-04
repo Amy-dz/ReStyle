@@ -66,90 +66,86 @@
     <link rel="stylesheet" href="../css/contact.css" />
   </head>
   <body>
-    <!------------------------------------------------------------------ NAVBAR -------------------------------------------------------->
     <header>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
-        <div class="container-fluid">
-          <a class="navbar-brand logo" href="#">
-            <img
-              src="../img/logo.png"
-              alt="Bootstrap"
-              width="70"
-              height="auto"
-            />
-          </a>
-
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="index.html"
-                  >Accueil</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="index.html"
-                  >Accessoires</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Décorations</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#deco"> Vêtements</a>
-              </li>
-              <!-- <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Vêtements
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Chaussures</a></li>
-                  <li><a class="dropdown-item" href="#">Robes</a></li>
-                  <li><a class="dropdown-item" href="#">Pantalons</a></li>
-                  <li><a class="dropdown-item" href="#">T-shirt</a></li>
-                </ul>
-              </li> -->
-            </ul>
-            <form class="d-flex" role="search">
-              <input
-                class="form-control"
-                type="search"
-                placeholder="Recherchez un article"
-                aria-label="Search"
-              />
-              <a href="html/profil.html">
-                <i class="fa-solid fa-star icnsmenu"></i
-              ></a>
-              <a href="html/profil.html">
-                <i class="fa-solid fa-user icnsmenu"></i
-              ></a>
-              <a href="html/profil.html"
-                ><i class="fa-solid fa-cart-shopping icnsmenu"></i
-              ></a>
-              <button type="button" class="btn gap-2 connexionbtn">
-                Se connecter/ S'inscrire
-              </button>
-            </form>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+          <div class="container-fluid">
+            <a class="navbar-brand logo" href="#">
+              <img src="../img/logo.png" alt="Bootstrap" width="70" height="auto" />
+            </a>
+  
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="../index.html"
+                    >Accueil</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="catalogue.html#accessoires"
+                    >Accessoires</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="catalogue.html#deco">Décorations</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="catalogue.html"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Vêtements
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="catalogue.html#chaussure">Chaussures</a></li>
+                    <li><a class="dropdown-item" href="catalogue.html#vetement">Robes</a></li>
+                    <li><a class="dropdown-item" href="catalogue.html#vetement">Pantalons</a></li>
+                    <li><a class="dropdown-item" href="catalogue.html#vetement">T-shirt</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="contact.html"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input
+                  class="form-control"
+                  type="search"
+                  placeholder="Recherchez un article"
+                  aria-label="Search"
+                />
+                <a href="favoris.html">
+                  <i class="fa-solid fa-star icnsmenu"></i
+                ></a>
+                <a href="profil.html">
+                  <i class="fa-solid fa-user icnsmenu"></i
+                ></a>
+                <a href="../index.html"
+                  ><i class="fa-solid fa-cart-shopping icnsmenu"></i
+                ></a>
+                <a href="inscription.html" style="text-decoration: none;"><button type="button" class="btn gap-2 connexionbtn">
+                  Se connecter/ S'inscrire
+                </button></a>
+              </form>
+            </div>
           </div>
-        </div>
-      </nav>
-    </header>
+        </nav>
+      </header>
     <div class="parallaxv" style="min-height: 180px"></div>
 
     <!------------------------------------------------------------------ FIN NAVBAR -------------------------------------------------------->
@@ -286,7 +282,7 @@
           <h5 class="card-title" style="text-align: center; font-size: 30px; color: #c4236e;font-weight: 800;">Informations de Contact</h5>
           <h6 style="font-size: 20px;">Vous pouvez également nous contacter via :</h6>
           <p class="infob">E-mail : <a href="mailto:cineflix@gmail.com" class="infoa"
-            >restyle@entreprise.com</a
+            > restyle@entreprise.com</a
           ></p>
           <p class="infob">Tel: <a href="tel:+33623568955" class="infoa"
             >+33 2 23 56 89 55</a
@@ -302,107 +298,139 @@
     <!--------------------------------------------------------------------------------------------- FOOTER ------------------------------------------------>
     <div class="parallaxv" style="min-height: 180px"></div>
 
-    <footer
-      class="py-4"
-      style="background-color: #1c1c1c; color: #ffffff; text-align: center"
-    >
-      <div class="container">
-        <div class="row">
-          <!-- Section Contact -->
-          <div class="col-md-4 mb-3">
-            <h5 style="color: #ffffff; font-size: 1.9rem">Contact</h5>
-            <ul class="list-unstyled">
-              <li>
-                <a href="mailto:cineflix@gmail.com" class="contactt"
-                  >restyle@entreprise.com</a
+ <!-------------------------------------------------------- FOOTERRR ------------------------------------------------------------------------->
+ <footer class=" text-white py-4">
+    <div class="container">
+      <div class="row">
+        <!-- Colonne 1 : Pages principales -->
+        <div class="col-sm-6 col-md-3 mb-3">
+          <h5 class="footerh5">Pages principales</h5>
+          <ul class="list-unstyled">
+            <li>
+              <a
+                href="index.html"
+                class="footer-link animate__animated animate__fadeIn"
+                >Accueil</a
+              >
+            </li>
+            <li>
+              <a
+                href="page/listefilms.html"
+                class="footer-link animate__animated animate__fadeIn"
+                >Accessoires</a
+              >
+            </li>
+            <li>
+              <a
+                href="page/genres.html"
+                class="footer-link animate__animated animate__fadeIn"
+                >Décorations</a
+              >
+            </li>
+            <li>
+              <a
+                href="page/pagenouveaute.html"
+                class="footer-link animate__animated animate__fadeIn"
+                >Vêtements</a
+              >
+            </li>
+            <li>
+                <a
+                  href="page/pagenouveaute.html"
+                  class="footer-link animate__animated animate__fadeIn"
+                  >Contact</a
                 >
               </li>
-              <li>
-                <a href="tel:+33623568955" class="contactt"
-                  >+33 2 23 56 89 55</a
-                >
-              </li>
-            </ul>
-          </div>
+          </ul>
+        </div>
 
-          <!-- Section rsx -->
-          <div class="col-md-4 mb-3" style="color: #ffffff; text-align: center">
-            <h5 style="color: #ffffff; font-size: 1.9rem">Réseaux-sociaux</h5>
-            <ul
-              class="list-unstyled d-flex gap-3"
-              style="text-align: center; justify-content: center"
-            >
-              <li style="text-align: center">
-                <a
-                  href="https://www.facebook.com/groups/448485336360350"
-                  target="_blank"
-                  style="text-align: center"
-                >
-                  <i class="bi bi-facebook rsxx"></i>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.instagram.com/"
-                  target="_blank"
-                  style="text-align: center"
-                >
-                  <i class="bi bi-instagram rsxx"></i>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://x.com/"
-                  target="_blank"
-                  style="text-align: center"
-                >
-                  <i class="bi bi-twitter-x rsxx"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
+        <!-- Colonne 2 : Informations de contact -->
+        <div class="col-sm-6 col-md-3 mb-3">
+          <h5 class="footerh5">Contact</h5>
+          <ul class="list-unstyled mailtel">
+            <li>
+              <a href="mailto:restyle@entreprise.com"
+                ><i class="fas fa-envelope"></i>  restyle@entreprise.com</a
+              >
+            </li>
+            <li>
+              <a href="tel:+33223568955"
+                ><i class="fas fa-phone"></i> +33 2 23 56 89 55</a
+              >
+            </li>
+            <li>
+              <i class="fas fa-map-marker-alt"></i> 25 rue des Arts 76000 Rouen
+            </li>
+          </ul>
+        </div>
 
-          <!-- Section mentions -->
-          <div class="col-md-4">
-            <h5 style="color: #ffffff; font-size: 1.9rem">Informations</h5>
-            <ul class="list-unstyled">
-              <li>
-                <a href="mentionslegales.html" class="infoo" target="_blank"
-                  >Mentions légales</a
-                >
-              </li>
-              <li>
-                <a href="politiquedeco.html" class="infoo" target="_blank"
-                  >Politique de confidentialité</a
-                >
-              </li>
-            </ul>
+        <!-- Colonne 3 : Réseaux sociaux -->
+        <div class="col-sm-6 col-md-3 mb-3">
+          <h5 class="footerh5">Suivez-nous</h5>
+          <div class="social-icons">
+            <a href="#" class="footer-icon animate__animated animate__flash">
+            </a>
+            <a
+              href="https://www.facebook.com/"
+              class="footer-icon animate__animated animate__flash"
+              target="_blank"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="https://x.com/?lang=fr"target="_blank" class="footer-icon animate__animated animate__flash"
+              ><i class="bi bi-twitter-x"></i></a>
+
+            <a href="https://www.prod.instagram.com/" target="_blank" class="footer-icon animate__animated animate__flash"
+              ><i class="fab fa-instagram"></i
+            ></a>
           </div>
         </div>
 
-        <!-- Ligne de séparation -->
-        <hr class="bg-secondary my-3" style="color: #f70776" />
-
-        <!-- Copyright -->
-        <div class="text-center">
-          <p style="font-size: 15px">© 2024 ReStyle. Tous droits réservés.</p>
+        <!-- Colonne 4 : Mentions légales -->
+        <div class="col-sm-6 col-md-3 mb-3">
+          <h5 class="footerh5">Informations</h5>
+          <ul class="list-unstyled">
+            <li>
+                <a
+                  href="page/politiquedeco.html"
+                  class="footer-link animate__animated animate__fadeIn"
+                  >FAQ</a
+                >
+              </li>
+            <li>
+              <a
+                href="page/mentionslegales.html"
+                class="footer-link animate__animated animate__fadeIn"
+                >Mentions légales</a
+              >
+            </li>
+            <li>
+              <a
+                href="page/politiquedeco.html"
+                class="footer-link animate__animated animate__fadeIn"
+                >Politique de confidentialité</a
+              >
+            </li>
+          </ul>
         </div>
       </div>
-    </footer>
+      <!-- Bas du footer -->
+      <div class="text-center mt-4">
+        <p>&copy; 2024 ReStyle. Tous droits réservés.</p>
+      </div>
+    </div>
+  </footer>
+  <!-------------------------------------------------------------------------------- JAVASCRIPT ----------------------------------------------------------------------->
 
-    <!---------------------------------------------------------------- footer --------------------------------------------------------------------------------------->
-    <!------------------------------------------------------------------ JAVA -------------------------------------------------------->
-    <!-- Bootstrap JS -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-    <!-- AOS Library -->
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-    <!------------------------------------------------------------------ FIN JAVA -------------------------------------------------------->
-  </body>
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
 </html>
