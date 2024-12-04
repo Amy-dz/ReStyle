@@ -3,11 +3,14 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: black;
+  background-color: #1c1c1c;
   font-family: "Barlow Condensed", sans-serif;
 }
 
-/***************************************************************** NAVBAR ***********************************************************/
+/***************************************************************** NAVBARR ***********************************************************/
+/***************************************************************** NAVBARR ***********************************************************/
+/***************************************************************** NAVBARR ***********************************************************/
+
 .navbar {
   background-color: #ffffffc8 !important;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -18,7 +21,6 @@ body {
   font-weight: 500;
   color: black;
 }
-
 .nav-link:hover {
   color: rgb(0, 0, 0);
   text-decoration: underline #f70776 2px;
@@ -54,13 +56,8 @@ body {
   color: #f70776;
   transition: 0.5s;
 }
-
-.connexionbtn:focus {
-  outline: 2px solid #f70776;
-  outline-offset: 2px;
-}
-
-/***************************************************************** FIN NAVBAR ***********************************************************/
+/***************************************************************** NAVBARR ***********************************************************/
+/***************************************************************** NAVBARR ***********************************************************/
 
 /* SECTION PRINCIPALE */
 .container {
@@ -128,24 +125,24 @@ h1 {
 }
 
 .remove-favorite {
-    background-color: #333; /* Couleur de fond gris */
-    color: white; /* Texte en blanc */
-    padding: 8px 20px;
-    border: 2px solid #f70776; /* Bordure rose */
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 15px;
-    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
-  }
-  
-  .remove-favorite:hover {
-    background-color: #d3d3d3; /* Gris clair au survol */
-    border-color: #f70776; /* Bordure rose inchangée au survol */
-    color: #f70776; /* Texte rose au survol */
-  }
-  
-  
-  .remove-favorite:focus {
+  background-color: #333; /* Couleur de fond gris */
+  color: white; /* Texte en blanc */
+  padding: 8px 20px;
+  border: 2px solid #f70776; /* Bordure rose */
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background-color 0.3s ease, border-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.remove-favorite:hover {
+  background-color: #d3d3d3; /* Gris clair au survol */
+  border-color: #f70776; /* Bordure rose inchangée au survol */
+  color: #f70776; /* Texte rose au survol */
+}
+
+.remove-favorite:focus {
   outline: 2px solid #c7005b;
   outline-offset: 2px;
 }
@@ -155,48 +152,58 @@ h1 {
   outline-offset: 2px;
 }
 
-/************************************************************** FOOTER ********************************************************************/
 .parallaxv {
-    background: url("../img/index/parallaxv.jpg") no-repeat;
-    height: 50px;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
-    overflow: hidden;
-  }
-  
-.rsxx {
-  font-size: 1.3rem;
-  color: #fff;
-  font-size: 2rem;
+  background: url("../img/index/parallaxv.jpg") no-repeat;
+  height: 50px;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  overflow: hidden;
+}
+/************************************************************** FOOTER ********************************************************************/
+/************************************************************** FOOTERRRR ********************************************************************/
+
+.footer-link {
+  color: #ddd;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
-.rsxx:hover {
+.footer-link:hover {
   color: #f70776;
-  font-size: 2rem;
+  animation: animate__fadeIn; /* Animation au survol */
 }
 
-.infoo {
-  font-size: 1.3rem;
-  color: #fff;
+.footer-icon {
+  display: inline-block;
+  color: #ddd;
+  font-size: 1.5rem;
+  margin-right: 10px;
+  transition: color 0.3s ease;
+}
+
+.footer-icon:hover {
+  color: #f70776;
+  animation: animate__pulse; /* Durée de l'animation */
+}
+
+.mailtel a {
   text-decoration: none;
+  color: #ffffff; /* Couleur par défaut */
+  transition: color 0.3s; /* Animation au survol */
 }
 
-.infoo:hover {
-  color: #fff;
-  text-decoration: underline #f70776 3px;
+.mailtel a:hover {
+  text-decoration: underline;
+  text-decoration-color: #f70776;
 }
 
-.contactt {
-  font-size: 1.3rem;
-  color: #fff;
-  text-decoration: none;
+.footerh5 {
+  color: #f70776;
+  font-weight: 600;
 }
 
-.contactt:hover {
-  color: #fff;
-  text-decoration: underline #f70776 3px;
-}
+/************************************************************** FINFOOTERRRR ********************************************************************/
 
 /************************************************************** RESPONSIVE DESIGN ************************************************************/
 @media (max-width: 768px) {

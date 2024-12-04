@@ -45,32 +45,41 @@
     />
     <!-- Icones Bootstrap -->
     <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
     <!-- Animate CSS -->
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <!-- AOS Library -->
     <link
-    href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
-    rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
     />
     <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/cd8dd3426c.js" crossorigin="anonymous">
-    </script>
+    <script
+      src="https://kit.fontawesome.com/cd8dd3426c.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- Own Style -->
     <link rel="stylesheet" href="../css/catalogue.css" />
   </head>
   <body>
     <!------------------------------------------------------------------ NAVBAR -------------------------------------------------------->
+    <!------------------------------------------------------------------ NAVBAR -------------------------------------------------------->
+    <!------------------------------------------------------------------ NAVBAR -------------------------------------------------------->
     <header>
       <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
         <div class="container-fluid">
-          <a class="navbar-brand logo" href="#">
-            <img src="../img/logo.png" alt="Bootstrap" width="70" height="auto" />
+          <a class="navbar-brand logo" href="../index.html">
+            <img
+              src="../img/logo.png"
+              alt="Bootstrap"
+              width="70"
+              height="auto"
+            />
           </a>
 
           <button
@@ -87,25 +96,25 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="index.html"
+                <a class="nav-link" aria-current="page" href="../index.html"
                   >Accueil</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="index.html"
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="catalogue.html#accessoires"
                   >Accessoires</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Décorations</a>
+                <a class="nav-link" href="catalogue.html#deco">Décorations</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#deco"> Vêtements</a>
-              </li>
-              <!-- <li class="nav-item dropdown">
+              <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle"
-                  href="#"
+                  href="catalogue.html"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
@@ -113,12 +122,33 @@
                   Vêtements
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Chaussures</a></li>
-                  <li><a class="dropdown-item" href="#">Robes</a></li>
-                  <li><a class="dropdown-item" href="#">Pantalons</a></li>
-                  <li><a class="dropdown-item" href="#">T-shirt</a></li>
+                  <li>
+                    <a class="dropdown-item" href="catalogue.html#chaussure"
+                      >Chaussures</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="catalogue.html#vetement"
+                      >Robes</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="catalogue.html#vetement"
+                      >Pantalons</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="catalogue.html#vetement"
+                      >T-shirt</a
+                    >
+                  </li>
                 </ul>
-              </li> -->
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="contact.html"
+                  >Contact</a
+                >
+              </li>
             </ul>
             <form class="d-flex" role="search">
               <input
@@ -127,494 +157,702 @@
                 placeholder="Recherchez un article"
                 aria-label="Search"
               />
-              <a href="html/profil.html">
+              <a href="favoris.html">
                 <i class="fa-solid fa-star icnsmenu"></i
               ></a>
-              <a href="html/profil.html">
+              <a href="profil.html">
                 <i class="fa-solid fa-user icnsmenu"></i
               ></a>
-              <a href="html/profil.html"
+              <a href="../index.html"
                 ><i class="fa-solid fa-cart-shopping icnsmenu"></i
               ></a>
-              <button type="button" class="btn gap-2 connexionbtn">
-                Se connecter/ S'inscrire
-              </button>
+              <a href="inscription.html" style="text-decoration: none"
+                ><button type="button" class="btn gap-2 connexionbtn">
+                  Se connecter/ S'inscrire
+                </button></a
+              >
             </form>
           </div>
         </div>
       </nav>
     </header>
-      <!------------------------------------------------------------------ FIN NAVBAR -------------------------------------------------------->
+    <!------------------------------------------------------------------ NAVBAR -------------------------------------------------------->
+    <!------------------------------------------------------------------ NAVBAR -------------------------------------------------------->
+    <!------------------------------------------------------------------ MAIN -------------------------------------------------------->
+    <!------------------- Main Content ------------------->
 
-      <!------------------------------------------------------------------ MAIN -------------------------------------------------------->
-      <!------------------- Main Content ------------------->
-      
-      <div class="parallaxv" style="min-height: 270px"></div>
-      <main class="container mt-5" style="padding: 90px;">
-        <!------------------- Filter Section ------------------->
-        <section class="filter-section">
-          <form class="row g-3">
-            <div class="col-md-3">
-              <select class="form-select" aria-label="Filter by category">
-                <option selected hidden>Catégorie</option>
-                <option value="1">Chaussures</option>
-                <option value="2">Vêtements</option>
-                <option value="3">Accessoires</option>
-                <option value="4">Déco</option>
-              </select>
-            </div>
-            <div class="col-md-3">
-              <select class="form-select" aria-label="Filter by price">
-                <option selected hidden>Prix</option>
-                <option value="1">0€ - 50€</option>
-                <option value="2">50€ - 100€</option>
-                <option value="3">100€ - 200€</option>
-              </select>
-            </div>
-            <div class="col-md-3">
-              <select class="form-select" aria-label="Filter by condition">
-                <option selected hidden>État</option>
-                <option value="1">Neuf</option>
-                <option value="2">Très bon état</option>
-                <option value="3">Bon état</option>
-              </select>
-            </div>
-            <div class="col-md-3">
-                <div class="input-group" id="searchbar">
+    <div class="parallaxv" style="min-height: 270px"></div>
+    <main class="container mt-5" style="padding: 90px">
+      <!------------------- Filter Section ------------------->
+      <section class="filter-section">
+        <form class="row g-3">
+          <div class="col-md-3">
+            <select class="form-select" aria-label="Filter by category">
+              <option selected hidden>Catégorie</option>
+              <option value="1">Chaussures</option>
+              <option value="2">Vêtements</option>
+              <option value="3">Accessoires</option>
+              <option value="4">Déco</option>
+            </select>
+          </div>
+          <div class="col-md-3">
+            <select class="form-select" aria-label="Filter by price">
+              <option selected hidden>Prix</option>
+              <option value="1">0€ - 50€</option>
+              <option value="2">50€ - 100€</option>
+              <option value="3">100€ - 200€</option>
+            </select>
+          </div>
+          <div class="col-md-3">
+            <select class="form-select" aria-label="Filter by condition">
+              <option selected hidden>État</option>
+              <option value="1">Neuf</option>
+              <option value="2">Très bon état</option>
+              <option value="3">Bon état</option>
+            </select>
+          </div>
+          <div class="col-md-3">
+            <div class="input-group" id="searchbar">
               <input
                 type="text"
                 class="form-control"
                 placeholder="Rechercher un produit..."
                 aria-label="Search"
-                />
-                <button class="btn btn-outline-light" type="button">
-                    <i class="fa-solid fa-magnifying-glass" id="chaussure"></i>
-                </button> 
-             </div>
+              />
+              <button class="btn btn-outline-light" type="button">
+                <i class="fa-solid fa-magnifying-glass" id="chaussure"></i>
+              </button>
             </div>
-          </form>
-        </section>
-  
-        <!------------------- Products Grid ------------------->
-        <section class="row gy-4">
-           
-            <!-- Produit 1 -->
-            
-            <div class="col-12 col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="100" >
-              <div class="card product-card">
-                <img src="../img/catalogue/chaussure.jpg" alt="Chaussures à plateforme blanche" />
-                <div class="p-3">
-                  <div class="d-flex justify-content-between align-items-center">
-                    <h5 class="product-card-title">Chaussures élégantes</h5>
-                    <button class="btn-favorite"><i class="fas fa-star"></i></button>
-                  </div>
-                  <p class="category-label">Catégorie: Chaussures</p>
-                  <p class="product-price">49,99€</p>
-                  <p class="product-condition">État : <span class="condition-label">Neuf</span></p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div></div>
-                    <button class="btn-cta">Voir le produit</button>
-                  </div>
-                </div>
+          </div>
+        </form>
+      </section>
+
+      <!------------------- Products Grid ------------------->
+      <section class="row gy-4">
+        <!-- Produit 1 -->
+
+        <div
+          class="col-12 col-md-6 col-lg-3"
+          data-aos="fade-up"
+          data-aos-duration="100"
+        >
+          <div class="card product-card">
+            <img
+              src="../img/catalogue/chaussure.jpg"
+              alt="Chaussures à plateforme blanche"
+            />
+            <div class="p-3">
+              <div class="d-flex justify-content-between align-items-center">
+                <h5 class="product-card-title">Chaussures élégantes</h5>
+                <button class="btn-favorite">
+                  <i class="fas fa-star"></i>
+                </button>
+              </div>
+              <p class="category-label">Catégorie: Chaussures</p>
+              <p class="product-price">49,99€</p>
+              <p class="product-condition">
+                État : <span class="condition-label">Neuf</span>
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div></div>
+                <a href="chausel.html"
+                  ><button class="btn-cta">Voir le produit</button></a
+                >
               </div>
             </div>
-          
-            <!-- Produit 2 -->
-            <div class="col-12 col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="200">
-              <div class="card product-card">
-                <img src="../img/catalogue/basket.jpg" alt="Paire de baskets élégantes" />
-                <div class="p-3">
-                  <div class="d-flex justify-content-between align-items-center">
-                    <h5 class="product-card-title">Baskets élégantes</h5>
-                    <button class="btn-favorite"><i class="fas fa-star"></i></button>
-                  </div>
-                  <p class="category-label">Catégorie: Chaussures</p>
-                  <p class="product-price">89,99€</p>
-                  <p class="product-condition">État : <span class="condition-label">Très bon état</span></p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div></div>
-                    <button class="btn-cta">Voir le produit</button>
-                  </div>
-                </div>
+          </div>
+        </div>
+
+        <!-- Produit 2 -->
+        <div
+          class="col-12 col-md-6 col-lg-3"
+          data-aos="fade-up"
+          data-aos-duration="200"
+        >
+          <div class="card product-card">
+            <img
+              src="../img/catalogue/basket.jpg"
+              alt="Paire de baskets élégantes"
+            />
+            <div class="p-3">
+              <div class="d-flex justify-content-between align-items-center">
+                <h5 class="product-card-title">Baskets élégantes</h5>
+                <button class="btn-favorite">
+                  <i class="fas fa-star"></i>
+                </button>
+              </div>
+              <p class="category-label">Catégorie: Chaussures</p>
+              <p class="product-price">89,99€</p>
+              <p class="product-condition">
+                État : <span class="condition-label">Très bon état</span>
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div></div>
+                <button class="btn-cta">Voir le produit</button>
               </div>
             </div>
-          
-            <!-- Produit 3 -->
-            <div class="col-12 col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="300">
-              <div class="card product-card">
-                <img src="../img/catalogue/talons.jpg" alt="Paire de talons chics" />
-                <div class="p-3">
-                  <div class="d-flex justify-content-between align-items-center">
-                    <h5 class="product-card-title">Talons chics</h5>
-                    <button class="btn-favorite"><i class="fas fa-star"></i></button>
-                  </div>
-                  <p class="category-label">Catégorie: Chaussures</p>
-                  <p class="product-price">69,99€</p>
-                  <p class="product-condition">État : <span class="condition-label">Bon état</span></p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div></div>
-                    <button class="btn-cta">Voir le produit</button>
-                  </div>
-                </div>
+          </div>
+        </div>
+
+        <!-- Produit 3 -->
+        <div
+          class="col-12 col-md-6 col-lg-3"
+          data-aos="fade-up"
+          data-aos-duration="300"
+        >
+          <div class="card product-card">
+            <img
+              src="../img/catalogue/talons.jpg"
+              alt="Paire de talons chics"
+            />
+            <div class="p-3">
+              <div class="d-flex justify-content-between align-items-center">
+                <h5 class="product-card-title">Talons chics</h5>
+                <button class="btn-favorite">
+                  <i class="fas fa-star"></i>
+                </button>
+              </div>
+              <p class="category-label">Catégorie: Chaussures</p>
+              <p class="product-price">69,99€</p>
+              <p class="product-condition">
+                État : <span class="condition-label">Bon état</span>
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div></div>
+                <button class="btn-cta">Voir le produit</button>
               </div>
             </div>
-          
-            <!-- Produit 4 -->
-            <div class="col-12 col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="400">
-              <div class="card product-card">
-                <img src="../img/catalogue/converse.jpg" alt="Paire de converse à motif fleurie"/>
-                <div class="p-3">
-                  <div class="d-flex justify-content-between align-items-center">
-                    <h5 class="product-card-title">Converses fleuries</h5>
-                    <button class="btn-favorite"><i class="fas fa-star"></i></button>
-                  </div>
-                  <p class="category-label">Catégorie: Chaussures</p>
-                  <p class="product-price">59,99€</p>
-                  <p class="product-condition">État : <span class="condition-label">Neuf</span></p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div></div>
-                    <button class="btn-cta" id="vetement">Voir le produit</button>
-                  </div>
-                </div>
+          </div>
+        </div>
+
+        <!-- Produit 4 -->
+        <div
+          class="col-12 col-md-6 col-lg-3"
+          data-aos="fade-up"
+          data-aos-duration="400"
+        >
+          <div class="card product-card">
+            <img
+              src="../img/catalogue/converse.jpg"
+              alt="Paire de converse à motif fleurie"
+            />
+            <div class="p-3">
+              <div class="d-flex justify-content-between align-items-center">
+                <h5 class="product-card-title">Converses fleuries</h5>
+                <button class="btn-favorite">
+                  <i class="fas fa-star"></i>
+                </button>
+              </div>
+              <p class="category-label">Catégorie: Chaussures</p>
+              <p class="product-price">59,99€</p>
+              <p class="product-condition">
+                État : <span class="condition-label">Neuf</span>
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div></div>
+                <button class="btn-cta" id="vetement">Voir le produit</button>
               </div>
             </div>
-            <!-- Produit 5 -->
-            <div class="col-12 col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="500" >
-              <div class="card product-card">
-                <img src="../img/catalogue/gilet.jpg" alt="Gilet en laine"/>
-                <div class="p-3">
-                  <div class="d-flex justify-content-between align-items-center">
-                    <h5 class="product-card-title">Gilet en laine</h5>
-                    <button class="btn-favorite"><i class="fas fa-star"></i></button>
-                  </div>
-                  <p class="category-label">Catégorie: Vêtements</p>
-                  <p class="product-price">39,99€</p>
-                  <p class="product-condition">État : <span class="condition-label">Très bon état</span></p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div></div>
-                    <button class="btn-cta">Voir le produit</button>
-                  </div>
-                </div>
+          </div>
+        </div>
+        <!-- Produit 5 -->
+        <div
+          class="col-12 col-md-6 col-lg-3"
+          data-aos="fade-up"
+          data-aos-duration="500"
+        >
+          <div class="card product-card">
+            <img src="../img/catalogue/gilet.jpg" alt="Gilet en laine" />
+            <div class="p-3">
+              <div class="d-flex justify-content-between align-items-center">
+                <h5 class="product-card-title">Gilet en laine</h5>
+                <button class="btn-favorite">
+                  <i class="fas fa-star"></i>
+                </button>
+              </div>
+              <p class="category-label">Catégorie: Vêtements</p>
+              <p class="product-price">39,99€</p>
+              <p class="product-condition">
+                État : <span class="condition-label">Très bon état</span>
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div></div>
+                <a href="gilet.html"
+                  ><button class="btn-cta">Voir le produit</button></a
+                >
               </div>
             </div>
-
-            <!-- Produit 6 -->
-            <div class="col-12 col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="600">
-             <div class="card product-card">
-              <img src="../img/catalogue/robe.jpg" alt="Robe élégante" />
-              <div class="p-3">
-                <div class="d-flex justify-content-between align-items-center">
-                 <h5 class="product-card-title">Robe élégante</h5>
-                 <button class="btn-favorite"><i class="fas fa-star"></i></button>
-               </div>
-               <p class="category-label">Catégorie: Vêtements</p>
-               <p class="product-price">89,99€</p>
-               <p class="product-condition">État : <span class="condition-label">Très bon état</span></p>
-               <div class="d-flex justify-content-between align-items-center">
-                 <div></div>
-                 <button class="btn-cta">Voir le produit</button>
-               </div>
-             </div>
-           </div>
-         </div>
-
-  <!-- Produit 7 -->
-  <div class="col-12 col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="700">
-    <div class="card product-card">
-      <img src="../img/catalogue/pantalon.jpg" alt="Pantalon en jean classique bleu" />
-      <div class="p-3">
-        <div class="d-flex justify-content-between align-items-center">
-          <h5 class="product-card-title">Pantalon classique</h5>
-          <button class="btn-favorite"><i class="fas fa-star"></i></button>
+          </div>
         </div>
-        <p class="category-label">Catégorie: Vêtements</p>
-        <p class="product-price">49,99€</p>
-        <p class="product-condition">État : <span class="condition-label">Bon état</span></p>
-        <div class="d-flex justify-content-between align-items-center">
-          <div></div>
-          <button class="btn-cta">Voir le produit</button>
+
+        <!-- Produit 6 -->
+        <div
+          class="col-12 col-md-6 col-lg-3"
+          data-aos="fade-up"
+          data-aos-duration="600"
+        >
+          <div class="card product-card">
+            <img src="../img/catalogue/robe.jpg" alt="Robe élégante" />
+            <div class="p-3">
+              <div class="d-flex justify-content-between align-items-center">
+                <h5 class="product-card-title">Robe élégante</h5>
+                <button class="btn-favorite">
+                  <i class="fas fa-star"></i>
+                </button>
+              </div>
+              <p class="category-label">Catégorie: Vêtements</p>
+              <p class="product-price">89,99€</p>
+              <p class="product-condition">
+                État : <span class="condition-label">Très bon état</span>
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div></div>
+                <button class="btn-cta">Voir le produit</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produit 7 -->
+        <div
+          class="col-12 col-md-6 col-lg-3"
+          data-aos="fade-up"
+          data-aos-duration="700"
+        >
+          <div class="card product-card">
+            <img
+              src="../img/catalogue/pantalon.jpg"
+              alt="Pantalon en jean classique bleu"
+            />
+            <div class="p-3">
+              <div class="d-flex justify-content-between align-items-center">
+                <h5 class="product-card-title">Pantalon classique</h5>
+                <button class="btn-favorite">
+                  <i class="fas fa-star"></i>
+                </button>
+              </div>
+              <p class="category-label">Catégorie: Vêtements</p>
+              <p class="product-price">49,99€</p>
+              <p class="product-condition">
+                État : <span class="condition-label">Bon état</span>
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div></div>
+                <button class="btn-cta">Voir le produit</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produit 8 -->
+        <div
+          class="col-12 col-md-6 col-lg-3"
+          data-aos="fade-up"
+          data-aos-duration="800"
+        >
+          <div class="card product-card">
+            <img src="../img/catalogue/ensemble.webp" alt="Ensemble chic" />
+            <div class="p-3">
+              <div class="d-flex justify-content-between align-items-center">
+                <h5 class="product-card-title">Ensemble chic</h5>
+                <button class="btn-favorite">
+                  <i class="fas fa-star"></i>
+                </button>
+              </div>
+              <p class="category-label">Catégorie: Vêtements</p>
+              <p class="product-price">69,99€</p>
+              <p class="product-condition">
+                État : <span class="condition-label">Neuf</span>
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div></div>
+                <button class="btn-cta" id="accessoires">
+                  Voir le produit
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produit 9 -->
+        <div
+          class="col-12 col-md-6 col-lg-3"
+          data-aos="fade-up"
+          data-aos-duration="900"
+        >
+          <div class="card product-card">
+            <img src="../img/catalogue/sac.jpg" alt="Sac en cuir" />
+            <div class="p-3">
+              <div class="d-flex justify-content-between align-items-center">
+                <h5 class="product-card-title">Sac en cuir</h5>
+                <button class="btn-favorite">
+                  <i class="fas fa-star"></i>
+                </button>
+              </div>
+              <p class="category-label">Catégorie: Accessoires</p>
+              <p class="product-price">79,99€</p>
+              <p class="product-condition">
+                État : <span class="condition-label">Bon état</span>
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div></div>
+                <a href="saccuir.html"
+                  ><button class="btn-cta">Voir le produit</button></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produit 10 -->
+        <div
+          class="col-12 col-md-6 col-lg-3"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          <div class="card product-card">
+            <img
+              src="../img/catalogue/collier.jpg"
+              alt="Collier à perles blanches avec un noeud noir"
+            />
+            <div class="p-3">
+              <div class="d-flex justify-content-between align-items-center">
+                <h5 class="product-card-title">Collier à perles</h5>
+                <button class="btn-favorite">
+                  <i class="fas fa-star"></i>
+                </button>
+              </div>
+              <p class="category-label">Catégorie: Accessoires</p>
+              <p class="product-price">29,99€</p>
+              <p class="product-condition">
+                État : <span class="condition-label">Très bon état</span>
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div></div>
+                <button class="btn-cta">Voir le produit</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produit 11 -->
+        <div
+          class="col-12 col-md-6 col-lg-3"
+          data-aos="fade-up"
+          data-aos-duration="1100"
+        >
+          <div class="card product-card">
+            <img src="../img/catalogue/lunette.jpg" alt="Lunettes de soleil" />
+            <div class="p-3">
+              <div class="d-flex justify-content-between align-items-center">
+                <h5 class="product-card-title">Lunettes de soleil</h5>
+                <button class="btn-favorite">
+                  <i class="fas fa-star"></i>
+                </button>
+              </div>
+              <p class="category-label">Catégorie: Accessoires</p>
+              <p class="product-price">39,99€</p>
+              <p class="product-condition">
+                État : <span class="condition-label">Neuf</span>
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div></div>
+                <button class="btn-cta">Voir le produit</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produit 12 -->
+        <div
+          class="col-12 col-md-6 col-lg-3"
+          data-aos="fade-up"
+          data-aos-duration="1200"
+        >
+          <div class="card product-card">
+            <img
+              src="../img/catalogue/ceinture.jpg"
+              alt="Ceinture chaîne en argent"
+            />
+            <div class="p-3">
+              <div class="d-flex justify-content-between align-items-center">
+                <h5 class="product-card-title">Ceinture en argent</h5>
+                <button class="btn-favorite">
+                  <i class="fas fa-star"></i>
+                </button>
+              </div>
+              <p class="category-label">Catégorie: Accessoires</p>
+              <p class="product-price">19,99€</p>
+              <p class="product-condition">
+                État : <span class="condition-label">Bon état</span>
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div></div>
+                <button class="btn-cta" id="deco">Voir le produit</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produit 13 -->
+        <div
+          class="col-12 col-md-6 col-lg-3"
+          data-aos="fade-up"
+          data-aos-duration="1300"
+        >
+          <div class="card product-card">
+            <img src="../img/catalogue/vase.jpg" alt="Vase en céramique" />
+            <div class="p-3">
+              <div class="d-flex justify-content-between align-items-center">
+                <h5 class="product-card-title">Vase en céramique</h5>
+                <button class="btn-favorite">
+                  <i class="fas fa-star"></i>
+                </button>
+              </div>
+              <p class="category-label">Catégorie: Décoration</p>
+              <p class="product-price">34,99€</p>
+              <p class="product-condition">
+                État : <span class="condition-label">Très bon état</span>
+              </p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div></div>
+                <a href="vase.html"
+                  ><button class="btn-cta">Voir le produit</button></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produit 14 -->
+        <div
+          class="col-12 col-md-6 col-lg-3"
+          data-aos="fade-up"
+          data-aos-duration="1400"
+        >
+          <div class="card product-card">
+            <img
+              src="../img/catalogue/coussin.jpg"
+              alt="Coussin en forme de fleur décoratif"
+            />
+            <div class="p-3">
+              <div class="d-flex justify-content-between align-items-center">
+                <h5 class="product-card-title">Coussin décoratif</h5>
+                <button class="btn-favorite">
+                  <i class="fas fa-star"></i>
+                </button>
+              </div>
+              <p class="category-label">Catégorie: Décoration</p>
+              <p class="product-price">19,99€</p>
+              <p class="product-condition">
+                État : <span class="condition-label">Bon état</span>
+              </p>
+              <!-- Alignement du bouton "Voir le produit" à droite -->
+              <div class="text-end">
+                <button class="btn-cta">Voir le produit</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produit 15 -->
+        <div
+          class="col-12 col-md-6 col-lg-3"
+          data-aos="fade-up"
+          data-aos-duration="1500"
+        >
+          <div class="card product-card">
+            <img
+              src="../img/catalogue/telephone.jpg"
+              alt="Téléphone vintage rose"
+            />
+            <div class="p-3">
+              <div class="d-flex justify-content-between align-items-center">
+                <h5 class="product-card-title">Téléphone vintage rose</h5>
+                <button class="btn-favorite">
+                  <i class="fas fa-star"></i>
+                </button>
+              </div>
+              <p class="category-label">Catégorie: Décration</p>
+              <p class="product-price">399,99€</p>
+              <p class="product-condition">
+                État : <span class="condition-label">Bon état</span>
+              </p>
+              <!-- Alignement du bouton "Voir le produit" à droite -->
+              <div class="text-end">
+                <button class="btn-cta">Voir le produit</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Produit 16 -->
+        <div
+          class="col-12 col-md-6 col-lg-3"
+          data-aos="fade-up"
+          data-aos-duration="1600"
+        >
+          <div class="card product-card">
+            <img
+              src="../img/catalogue/miroir.jpg"
+              alt="Miroir vintage en bois"
+            />
+            <div class="p-3">
+              <div class="d-flex justify-content-between align-items-center">
+                <h5 class="product-card-title">Miroir vintage</h5>
+                <button class="btn-favorite">
+                  <i class="fas fa-star"></i>
+                </button>
+              </div>
+              <p class="category-label">Catégorie: Décoration</p>
+              <p class="product-price">99,99€</p>
+              <p class="product-condition">
+                État : <span class="condition-label">Très bon état</span>
+              </p>
+              <!-- Alignement du bouton "Voir le produit" à droite -->
+              <div class="text-end">
+                <button class="btn-cta">Voir le produit</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div class="parallaxv" style="min-height: 270px"></div>
+    <!------------------------------------------------------------------ FIN MAIN -------------------------------------------------------->
+    <!-------------------------------------------------------- FOOTERRR ------------------------------------------------------------------------->
+    <footer class="text-white py-4">
+      <div class="container">
+        <div class="row">
+          <!-- Colonne 1 : Pages principales -->
+          <div class="col-sm-6 col-md-3 mb-3">
+            <h5 class="footerh5">Pages principales</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="../index.html"
+                  class="footer-link animate__animated animate__fadeIn"
+                  >Accueil</a
+                >
+              </li>
+              <li>
+                <a
+                  href="catalogue.html#accessoires"
+                  class="footer-link animate__animated animate__fadeIn"
+                  >Accessoires</a
+                >
+              </li>
+              <li>
+                <a
+                  href="catalogue.html#deco"
+                  class="footer-link animate__animated animate__fadeIn"
+                  >Décorations</a
+                >
+              </li>
+              <li>
+                <a
+                  href="catalogue.html#vetement"
+                  class="footer-link animate__animated animate__fadeIn"
+                  >Vêtements</a
+                >
+              </li>
+              <li>
+                <a
+                  href="contact.html"
+                  class="footer-link animate__animated animate__fadeIn"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Colonne 2 : Informations de contact -->
+          <div class="col-sm-6 col-md-3 mb-3">
+            <h5 class="footerh5">Contact</h5>
+            <ul class="list-unstyled mailtel">
+              <li>
+                <a href="mailto:restyle@entreprise.com"
+                  ><i class="fas fa-envelope"></i> restyle@entreprise.com</a
+                >
+              </li>
+              <li>
+                <a href="tel:+33223568955"
+                  ><i class="fas fa-phone"></i> +33 2 23 56 89 55</a
+                >
+              </li>
+              <li>
+                <i class="fas fa-map-marker-alt"></i> 25 rue des Arts 76000
+                Rouen
+              </li>
+            </ul>
+          </div>
+
+          <!-- Colonne 3 : Réseaux sociaux -->
+          <div class="col-sm-6 col-md-3 mb-3">
+            <h5 class="footerh5">Suivez-nous</h5>
+            <div class="social-icons">
+              <a href="#" class="footer-icon animate__animated animate__flash">
+              </a>
+              <a
+                href="https://www.facebook.com/"
+                class="footer-icon animate__animated animate__flash"
+                target="_blank"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a
+                href="https://x.com/?lang=fr"
+                target="_blank"
+                class="footer-icon animate__animated animate__flash"
+                ><i class="bi bi-twitter-x"></i
+              ></a>
+
+              <a
+                href="https://www.prod.instagram.com/"
+                target="_blank"
+                class="footer-icon animate__animated animate__flash"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+
+          <!-- Colonne 4 : Mentions légales -->
+          <div class="col-sm-6 col-md-3 mb-3">
+            <h5 class="footerh5">Informations</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href="contact.html#faq"
+                  class="footer-link animate__animated animate__fadeIn"
+                  >FAQ</a
+                >
+              </li>
+              <li>
+                <a
+                  href="mentionslegales.html"
+                  class="footer-link animate__animated animate__fadeIn"
+                  target="_blank"
+                  >Mentions légales</a
+                >
+              </li>
+              <li>
+                <a
+                  href="politiquedeco.html"
+                  class="footer-link animate__animated animate__fadeIn"
+                  target="_blank"
+                  >Politique de confidentialité</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Bas du footer -->
+        <div class="text-center mt-4">
+          <p>&copy; 2024 ReStyle. Tous droits réservés.</p>
         </div>
       </div>
-    </div>
-  </div>
+    </footer>
 
-  <!-- Produit 8 -->
-  <div class="col-12 col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="800">
-    <div class="card product-card">
-      <img src="../img/catalogue/ensemble.webp" alt="Ensemble chic" />
-      <div class="p-3">
-        <div class="d-flex justify-content-between align-items-center">
-          <h5 class="product-card-title">Ensemble chic</h5>
-          <button class="btn-favorite"><i class="fas fa-star"></i></button>
-        </div>
-        <p class="category-label">Catégorie: Vêtements</p>
-        <p class="product-price">69,99€</p>
-        <p class="product-condition">État : <span class="condition-label">Neuf</span></p>
-        <div class="d-flex justify-content-between align-items-center">
-          <div></div>
-          <button class="btn-cta" id="accessoires">Voir le produit</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Produit 9 -->
-  <div class="col-12 col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="900">
-    <div class="card product-card">
-      <img src="../img/catalogue/sac.jpg" alt="Sac en cuir" />
-      <div class="p-3">
-        <div class="d-flex justify-content-between align-items-center">
-          <h5 class="product-card-title">Sac en cuir</h5>
-          <button class="btn-favorite"><i class="fas fa-star"></i></button>
-        </div>
-        <p class="category-label">Catégorie: Accessoires</p>
-        <p class="product-price">79,99€</p>
-        <p class="product-condition">État : <span class="condition-label">Bon état</span></p>
-        <div class="d-flex justify-content-between align-items-center">
-          <div></div>
-          <button class="btn-cta">Voir le produit</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Produit 10 -->
-  <div class="col-12 col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="1000">
-    <div class="card product-card">
-      <img src="../img/catalogue/collier.jpg" alt="Collier à perles blanches avec un noeud noir" />
-      <div class="p-3">
-        <div class="d-flex justify-content-between align-items-center">
-          <h5 class="product-card-title">Collier à perles</h5>
-          <button class="btn-favorite"><i class="fas fa-star"></i></button>
-        </div>
-        <p class="category-label">Catégorie: Accessoires</p>
-        <p class="product-price">29,99€</p>
-        <p class="product-condition">État : <span class="condition-label">Très bon état</span></p>
-        <div class="d-flex justify-content-between align-items-center">
-          <div></div>
-          <button class="btn-cta">Voir le produit</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Produit 11 -->
-  <div class="col-12 col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="1100">
-    <div class="card product-card">
-      <img src="../img/catalogue/lunette.jpg" alt="Lunettes de soleil" />
-      <div class="p-3">
-        <div class="d-flex justify-content-between align-items-center">
-          <h5 class="product-card-title">Lunettes de soleil</h5>
-          <button class="btn-favorite"><i class="fas fa-star"></i></button>
-        </div>
-        <p class="category-label">Catégorie: Accessoires</p>
-        <p class="product-price">39,99€</p>
-        <p class="product-condition">État : <span class="condition-label">Neuf</span></p>
-        <div class="d-flex justify-content-between align-items-center">
-          <div></div>
-          <button class="btn-cta">Voir le produit</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Produit 12 -->
-  <div class="col-12 col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="1200">
-    <div class="card product-card">
-      <img src="../img/catalogue/ceinture.jpg" alt="Ceinture chaîne en argent" />
-      <div class="p-3">
-        <div class="d-flex justify-content-between align-items-center">
-          <h5 class="product-card-title">Ceinture en argent</h5>
-          <button class="btn-favorite"><i class="fas fa-star"></i></button>
-        </div>
-        <p class="category-label">Catégorie: Accessoires</p>
-        <p class="product-price">19,99€</p>
-        <p class="product-condition">État : <span class="condition-label">Bon état</span></p>
-        <div class="d-flex justify-content-between align-items-center">
-          <div></div>
-          <button class="btn-cta" id="deco">Voir le produit</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Produit 13 -->
-  <div class="col-12 col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="1300">
-    <div class="card product-card">
-      <img src="../img/catalogue/vase.jpg" alt="Vase en céramique" />
-      <div class="p-3">
-        <div class="d-flex justify-content-between align-items-center">
-          <h5 class="product-card-title">Vase en céramique</h5>
-          <button class="btn-favorite"><i class="fas fa-star"></i></button>
-        </div>
-        <p class="category-label">Catégorie: Décoration</p>
-        <p class="product-price">34,99€</p>
-        <p class="product-condition">État : <span class="condition-label">Très bon état</span></p>
-        <div class="d-flex justify-content-between align-items-center">
-          <div></div>
-          <button class="btn-cta">Voir le produit</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Produit 14 -->
-<div class="col-12 col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="1400">
-    <div class="card product-card">
-      <img src="../img/catalogue/coussin.jpg" alt="Coussin en forme de fleur décoratif" />
-      <div class="p-3">
-        <div class="d-flex justify-content-between align-items-center">
-          <h5 class="product-card-title">Coussin décoratif</h5>
-          <button class="btn-favorite"><i class="fas fa-star"></i></button>
-        </div>
-        <p class="category-label">Catégorie: Décoration</p>
-        <p class="product-price">19,99€</p>
-        <p class="product-condition">État : <span class="condition-label">Bon état</span></p>
-        <!-- Alignement du bouton "Voir le produit" à droite -->
-        <div class="text-end">
-          <button class="btn-cta">Voir le produit</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <!-- Produit 15 -->
-  <div class="col-12 col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="1500">
-    <div class="card product-card">
-      <img src="../img/catalogue/telephone.jpg" alt="Téléphone vintage rose" />
-      <div class="p-3">
-        <div class="d-flex justify-content-between align-items-center">
-          <h5 class="product-card-title">Téléphone vintage rose</h5>
-          <button class="btn-favorite"><i class="fas fa-star"></i></button>
-        </div>
-        <p class="category-label">Catégorie: Décration</p>
-        <p class="product-price">399,99€</p>
-        <p class="product-condition">État : <span class="condition-label">Bon état</span></p>
-        <!-- Alignement du bouton "Voir le produit" à droite -->
-        <div class="text-end">
-          <button class="btn-cta">Voir le produit</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  <!-- Produit 16 -->
-  <div class="col-12 col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="1600">
-    <div class="card product-card">
-      <img src="../img/catalogue/miroir.jpg" alt="Miroir vintage en bois" />
-      <div class="p-3">
-        <div class="d-flex justify-content-between align-items-center">
-          <h5 class="product-card-title">Miroir vintage</h5>
-          <button class="btn-favorite"><i class="fas fa-star"></i></button>
-        </div>
-        <p class="category-label">Catégorie: Décoration</p>
-        <p class="product-price">99,99€</p>
-        <p class="product-condition">État : <span class="condition-label">Très bon état</span></p>
-        <!-- Alignement du bouton "Voir le produit" à droite -->
-        <div class="text-end">
-          <button class="btn-cta">Voir le produit</button>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-</section>
-</main>
-
-              
-     <!------------------------------------------------------------------ FIN MAIN -------------------------------------------------------->
-     <!--------------------------------------------------------------------------------------------- FOOTER ------------------------------------------------>
-     <div class="parallaxv" style="min-height: 180px"></div>   
-
-     <footer
-       class="py-4"
-       style="background-color: #1c1c1c; color: #ffffff; text-align: center"
-     >
-       <div class="container">
-         <div class="row">
-           <!-- Section Contact -->
-           <div class="col-md-4 mb-3">
-             <h5 style="color: #ffffff; font-size: 1.9rem">Contact</h5>
-             <ul class="list-unstyled">
-               <li>
-                 <a href="mailto:cineflix@gmail.com" class="contactt"
-                   >restyle@entreprise.com</a
-                 >
-               </li>
-               <li>
-                 <a href="tel:+33623568955" class="contactt"
-                   >+33 2 23 56 89 55</a
-                 >
-               </li>
-             </ul>
-           </div>
- 
-           <!-- Section rsx -->
-           <div class="col-md-4 mb-3" style="color: #ffffff; text-align: center">
-             <h5 style="color: #ffffff; font-size: 1.9rem">Réseaux-sociaux</h5>
-             <ul
-               class="list-unstyled d-flex gap-3"
-               style="text-align: center; justify-content: center"
-             >
-               <li style="text-align: center">
-                 <a
-                   href="https://www.facebook.com/groups/448485336360350"
-                   target="_blank"
-                   style="text-align: center"
-                 >
-                   <i class="bi bi-facebook rsxx"></i>
-                 </a>
-               </li>
-               <li>
-                 <a
-                   href="https://www.instagram.com/"
-                   target="_blank"
-                   style="text-align: center"
-                 >
-                   <i class="bi bi-instagram rsxx"></i>
-                 </a>
-               </li>
-               <li>
-                 <a
-                   href="https://x.com/"
-                   target="_blank"
-                   style="text-align: center"
-                 >
-                   <i class="bi bi-twitter-x rsxx"></i>
-                 </a>
-               </li>
-             </ul>
-           </div>
- 
-           <!-- Section mentions -->
-           <div class="col-md-4">
-             <h5 style="color: #ffffff; font-size: 1.9rem">Informations</h5>
-             <ul class="list-unstyled">
-               <li>
-                 <a href="mentionslegales.html" class="infoo" target="_blank"
-                   >Mentions légales</a
-                 >
-               </li>
-               <li>
-                 <a href="politiquedeco.html" class="infoo" target="_blank"
-                   >Politique de confidentialité</a
-                 >
-               </li>
-             </ul>
-           </div>
-         </div>
- 
-         <!-- Ligne de séparation -->
-         <hr class="bg-secondary my-3" style="color: #f70776" />
- 
-         <!-- Copyright -->
-         <div class="text-center">
-           <p style="font-size: 15px">© 2024 ReStyle. Tous droits réservés.</p>
-         </div>
-       </div>
-     </footer>
- 
-     <!---------------------------------------------------------------- footer --------------------------------------------------------------------------------------->
+    <!---------------------------------------------------------------- footer --------------------------------------------------------------------------------------->
     <!------------------------------------------------------------------ JAVA -------------------------------------------------------->
     <!-- Bootstrap JS -->
     <script
