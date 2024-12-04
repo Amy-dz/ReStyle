@@ -100,7 +100,7 @@
                 <a class="nav-link" href="#">Décorations</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#"> Vêtements</a>
+                <a class="nav-link" href="#deco"> Vêtements</a>
               </li>
               <!-- <li class="nav-item dropdown">
                 <a
@@ -149,7 +149,8 @@
       <!------------------------------------------------------------------ MAIN -------------------------------------------------------->
       <!------------------- Main Content ------------------->
       
-    <main class="container mt-5" style="padding: 90px;">
+      <div class="parallaxv" style="min-height: 270px"></div>
+      <main class="container mt-5" style="padding: 90px;">
         <!------------------- Filter Section ------------------->
         <section class="filter-section">
           <form class="row g-3">
@@ -187,7 +188,7 @@
                 aria-label="Search"
                 />
                 <button class="btn btn-outline-light" type="button">
-                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-solid fa-magnifying-glass" id="chaussure"></i>
                 </button> 
              </div>
             </div>
@@ -198,7 +199,8 @@
         <section class="row gy-4">
            
             <!-- Produit 1 -->
-            <div class="col-12 col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="100">
+            
+            <div class="col-12 col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="100" >
               <div class="card product-card">
                 <img src="../img/catalogue/chaussure.jpg" alt="Chaussures à plateforme blanche" />
                 <div class="p-3">
@@ -260,7 +262,7 @@
             <!-- Produit 4 -->
             <div class="col-12 col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="400">
               <div class="card product-card">
-                <img src="../img/catalogue/converse.jpg" alt="Paire de converse à motif fleurie" />
+                <img src="../img/catalogue/converse.jpg" alt="Paire de converse à motif fleurie"/>
                 <div class="p-3">
                   <div class="d-flex justify-content-between align-items-center">
                     <h5 class="product-card-title">Converses fleuries</h5>
@@ -271,16 +273,15 @@
                   <p class="product-condition">État : <span class="condition-label">Neuf</span></p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div></div>
-                    <button class="btn-cta">Voir le produit</button>
+                    <button class="btn-cta" id="vetement">Voir le produit</button>
                   </div>
                 </div>
               </div>
             </div>
-          
             <!-- Produit 5 -->
-            <div class="col-12 col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="500">
+            <div class="col-12 col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="500" >
               <div class="card product-card">
-                <img src="../img/catalogue/gilet.jpg" alt="Gilet en laine" />
+                <img src="../img/catalogue/gilet.jpg" alt="Gilet en laine"/>
                 <div class="p-3">
                   <div class="d-flex justify-content-between align-items-center">
                     <h5 class="product-card-title">Gilet en laine</h5>
@@ -351,7 +352,7 @@
         <p class="product-condition">État : <span class="condition-label">Neuf</span></p>
         <div class="d-flex justify-content-between align-items-center">
           <div></div>
-          <button class="btn-cta">Voir le produit</button>
+          <button class="btn-cta" id="accessoires">Voir le produit</button>
         </div>
       </div>
     </div>
@@ -431,7 +432,7 @@
         <p class="product-condition">État : <span class="condition-label">Bon état</span></p>
         <div class="d-flex justify-content-between align-items-center">
           <div></div>
-          <button class="btn-cta">Voir le produit</button>
+          <button class="btn-cta" id="deco">Voir le produit</button>
         </div>
       </div>
     </div>
@@ -523,7 +524,7 @@
               
      <!------------------------------------------------------------------ FIN MAIN -------------------------------------------------------->
      <!--------------------------------------------------------------------------------------------- FOOTER ------------------------------------------------>
-   
+     <div class="parallaxv" style="min-height: 180px"></div>   
 
      <footer
        class="py-4"

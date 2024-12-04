@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bokor&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+/***************************************************************** NAVBAR ***********************************************************/
+.navbar {
+  background-color: #ffffffc8 !important;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav-link {
+  font-size: 23px;
+  font-weight: 500;
+  color: black;
+}
+
+.nav-link:hover {
+  color: rgb(0, 0, 0);
+  text-decoration: underline #f70776 2px;
+}
+
+.icnsmenu {
+  padding: 10px;
+  color: #000000;
+  font-size: 20px;
+}
+
+.icnsmenu:hover {
+  color: #f70777;
+  font-size: 20px;
+}
+
+.dropdown-item:hover {
+  color: #ffffff;
+  background-color: #f70777;
+}
+
+.connexionbtn {
+  background-color: #f70776;
+  color: #fff;
+  font-weight: 600;
+  font-size: 15px;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.connexionbtn:hover {
+  background-color: #ffffff;
+  color: #f70776;
+  transition: 0.5s;
+}
+
+.connexionbtn:focus {
+  outline: 2px solid #f70776;
+  outline-offset: 2px;
+}
+
+/***************************************************************** FIN NAVBAR ***********************************************************/
+
+/* SECTION PRINCIPALE */
+.container {
+  padding: 40px;
+  color: white;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/***************************************************************** CARDS FAVORIS ***********************************************************/
+.product-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.product-card {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid #f70776;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  opacity: 0;
+  animation: fadeIn 0.5s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  max-height: 250px; /* Limite la taille des images si elles sont trop grandes */
+  border-bottom: 2px solid #f70776;
+}
+
+.product-info {
+  padding: 15px;
+  text-align: center;
+}
+
+.product-card-title {
+  font-size: 22px;
+  color: #f70776;
+  margin-top: 15px;
+}
+
+.product-price {
+  font-size: 21px;
+  font-weight: 700;
+  color: #0099ff;
+  margin-top: 5px;
+}
+
+.remove-favorite {
+    background-color: #333; /* Couleur de fond gris */
+    color: white; /* Texte en blanc */
+    padding: 8px 20px;
+    border: 2px solid #f70776; /* Bordure rose */
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .remove-favorite:hover {
+    background-color: #d3d3d3; /* Gris clair au survol */
+    border-color: #f70776; /* Bordure rose inchangée au survol */
+    color: #f70776; /* Texte rose au survol */
+  }
+  
+  
+  .remove-favorite:focus {
+  outline: 2px solid #c7005b;
+  outline-offset: 2px;
+}
+
+.product-card:focus {
+  outline: 2px solid #f70776;
+  outline-offset: 2px;
+}
+
+/************************************************************** FOOTER ********************************************************************/
+.parallaxv {
+    background: url("../img/index/parallaxv.jpg") no-repeat;
+    height: 50px;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow: hidden;
+  }
+  
+.rsxx {
+  font-size: 1.3rem;
+  color: #fff;
+  font-size: 2rem;
+}
+
+.rsxx:hover {
+  color: #f70776;
+  font-size: 2rem;
+}
+
+.infoo {
+  font-size: 1.3rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+.infoo:hover {
+  color: #fff;
+  text-decoration: underline #f70776 3px;
+}
+
+.contactt {
+  font-size: 1.3rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+.contactt:hover {
+  color: #fff;
+  text-decoration: underline #f70776 3px;
+}
+
+/************************************************************** RESPONSIVE DESIGN ************************************************************/
+@media (max-width: 768px) {
+  footer .container {
+    padding: 10px;
+  }
+
+  .product-card img {
+    max-height: 200px;
+  }
+
+  .rsxx {
+    font-size: 1.5rem;
+  }
+
+  .infoo,
+  .contactt {
+    font-size: 1.1rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+}

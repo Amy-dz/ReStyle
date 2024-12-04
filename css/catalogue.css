@@ -58,7 +58,8 @@ body {
     background-color: #ffffffc8; /* Blanc transparent */
     padding: 15px;
     border-radius: 8px;
-    margin-bottom: 50px;
+    margin-bottom: 80px;
+    margin-top: -50px;
   }
   
   .filter-section select,
@@ -210,6 +211,15 @@ body {
     box-shadow: 0 0 0 3px rgba(255, 77, 166, 0.5); /* Halo doux pour accessibilité */
   }
 /************************************************************** FOOTER ********************************************************************/
+.parallaxv {
+  background: url("../img/index/parallaxv.jpg") no-repeat;
+  height: 50px;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  overflow: hidden;
+}
+
 .rsxx {
     font-size: 1.3rem;
     color: #fff;
