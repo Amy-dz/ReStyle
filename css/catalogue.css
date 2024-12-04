@@ -10,10 +10,12 @@ body {
 /***************************************************************** NAVBARR ***********************************************************/
 .navbar {
   background-color: #ffffffc8 !important;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .nav-link {
-  font-size: 20px;
+  font-size: 23px;
+  font-weight: 500;
   color: black;
 }
 .nav-link:hover {
@@ -22,6 +24,7 @@ body {
 }
 
 .icnsmenu {
+  padding: 10px;
   color: #000000;
   font-size: 20px;
 }
@@ -34,6 +37,20 @@ body {
 .dropdown-item:hover {
   color: #ffffff;
   background-color: #f70777;
+}
+
+.connexionbtn {
+  background-color: #f70776;
+  color: #fff;
+  font-weight: 600;
+  font-size: 15px;
+  white-space: nowrap;
+  text-align: center;
+}
+.connexionbtn:hover {
+  background-color: #ffffff;
+  color: #f70776;
+  transition: 0.5s;
 }
 /***************************************************************** FIN NAVBARR ***********************************************************/
 /* Section des filtres */
@@ -49,12 +66,13 @@ body {
     background-color: #333333; /* Fond noir-gris très foncé */
     color: white; /* Texte blanc */
     border: 1px solid #f70776; /* Bordure rose */
+    font-size: 18px;
   }
 
-  /* Section des filtres : Effet au focus */
+/* Section des filtres : Effet au focus */
 .filter-section select:focus,
 .filter-section input:focus {
-  border-color: #3498db; /* Bordure noire au focus */
+  border-color: #0099ff; /* Bordure noire au focus */
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.6); /* Ombre sombre au focus */
 
 }
@@ -93,7 +111,7 @@ body {
   }
   
   #searchbar input:focus {
-    border-color: #3498db; /* Bordure bleue au focus sur la barre de recherche */
+    border-color: #0099ff; /* Bordure bleue au focus sur la barre de recherche */
 
   }
   
@@ -118,25 +136,26 @@ body {
   }
   
   .product-card-title {
-    font-size: 18px;
+    font-size: 22px;
     color: #f70776; /* Titre rose */
     margin-top: 15px;
   }
   
   .product-price {
-    font-size: 16px;
-    color: #3498db; /* Prix bleu clair */
+    font-size: 21px;
+    font-weight: 700;
+    color: #0099ff; /* Prix bleu clair */
     margin-top: 5px;
   }
   
   .category-label {
-    font-size: 14px;
+    font-size: 18px;
     color: #333333; /* Catégorie en gris foncé */
     margin-top: 5px;
   }
   
   .product-condition {
-    font-size: 14px;
+    font-size: 18px;
     color: #555; /* Gris pour la condition */
     margin-top: 5px;
   }
@@ -167,21 +186,29 @@ body {
   }
   
   .btn-cta {
-    background-color: #f70776; /* Couleur rose */
-    color: white;
-    border: none;
-    border-radius: 5px;
-    padding: 10px 15px;
-    cursor: pointer;
-    font-size: 14px;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+    background: linear-gradient(135deg, #f70776, #9b4dff); /* Dégradé linéaire du rose au violet */
+    color: #ffffff; /* Texte blanc pour un contraste clair */
+    font-size: 1.2rem; /* Taille de police légèrement agrandie */
+    font-weight: bold; /* Texte en gras */
+    padding: 10px 10px; /* Ajustement de la taille */
+    border: 2px solid transparent; /* Bordure transparente */
+    border-radius: 20px; /* Coins arrondis pour une apparence moderne */
+    text-transform: uppercase; /* Texte en majuscules */
+    transition: background 0.3s ease, border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Transition améliorée */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre discrète */
   }
- 
+  
   .btn-cta:hover {
-    background-color: #c7005b; /* Couleur rose foncée */
-    transform: scale(1.05);
+    background: linear-gradient(135deg, #9b4dff, #f70776); /* Inversion du dégradé pour l'effet de survol */
+    border-color: #f70776; /* Bordure rose pour interactivité */
+    transform: translateY(-5px) scale(1.1) rotate(2deg); /* Effet de "lévitation", zoom et légère rotation */
+    box-shadow: 0 6px 12px rgba(155, 77, 255, 0.3); /* Ombre légèrement plus prononcée */
   }
-
+  
+  .btn-cta:focus {
+    outline: none; /* Supprimer les contours par défaut */
+    box-shadow: 0 0 0 3px rgba(255, 77, 166, 0.5); /* Halo doux pour accessibilité */
+  }
 /************************************************************** FOOTER ********************************************************************/
 .rsxx {
     font-size: 1.3rem;
