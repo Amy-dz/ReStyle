@@ -33,30 +33,37 @@
       name="twitter:image"
       content="https://www.restyle.com/images/twitter-preview.jpg"
     />
-    <!---------------------------------------------------------- LIENSSSSSSSSSSSSSSS --------------------------------------------------------->
-    <link rel="icon" type="image/png" href="../img/logo.png" />
 
+    <link rel="icon" type="image/png" href="../img/logo.png" />
+    <!---------------------------------------------------------- LIENS --------------------------------------------------------->
+    <!-- Bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <!-- Icones Bootstrap -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
+    <!-- Animate CSS -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+    <!-- AOS Library -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
     <script
       src="https://kit.fontawesome.com/cd8dd3426c.js"
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="../css/contact.css" />
-    <title>Restyle - Articles de Seconde Main</title>
-    <title>Document</title>
   </head>
   <body>
     <!------------------------------------------------------------------ NAVBAR -------------------------------------------------------->
@@ -99,25 +106,25 @@
                 <a class="nav-link" href="#">Décorations</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#"> Vêtements</a>
+                <a class="nav-link" href="#deco"> Vêtements</a>
               </li>
               <!-- <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Vêtements
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Chaussures</a></li>
-                    <li><a class="dropdown-item" href="#">Robes</a></li>
-                    <li><a class="dropdown-item" href="#">Pantalons</a></li>
-                    <li><a class="dropdown-item" href="#">T-shirt</a></li>
-                  </ul>
-                </li> -->
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Vêtements
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Chaussures</a></li>
+                  <li><a class="dropdown-item" href="#">Robes</a></li>
+                  <li><a class="dropdown-item" href="#">Pantalons</a></li>
+                  <li><a class="dropdown-item" href="#">T-shirt</a></li>
+                </ul>
+              </li> -->
             </ul>
             <form class="d-flex" role="search">
               <input
@@ -143,167 +150,157 @@
         </div>
       </nav>
     </header>
-    <!------------------------------------------------------------------ NAVBAR -------------------------------------------------------->
-    <!------------------------------------------------------------------ NAVBAR -------------------------------------------------------->
-    <!------------------------------------------------------------------ NAVBAR -------------------------------------------------------->
-    <!------------------------------------------------------------------ NAVBAR -------------------------------------------------------->
-    <!------------------------------------------------------------------ NAVBAR -------------------------------------------------------->
-    <div class="parallaxv" style="min-height: 200px"></div>
-    <main class="container my-5">
-      <!-- Formulaire de contact -->
-      <section id="contact-form" class="mb-5" style="color: #ffffff">
-        <h2>Formulaire de Contact</h2>
-        <p>
-          Vous avez une question ou une remarque ? Envoyez-nous un message :
-        </p>
-        <form>
-          <div class="mb-3">
-            <label for="name" class="form-label">Nom</label>
-            <input
-              type="text"
-              class="form-control"
-              id="name"
-              placeholder="Votre nom"
-              required
-            />
-          </div>
-          <div class="mb-3">
-            <label for="email" class="form-label">Email</label>
-            <input
-              type="email"
-              class="form-control"
-              id="email"
-              placeholder="Votre email"
-              required
-            />
-          </div>
-          <div class="mb-3">
-            <label for="message" class="form-label">Message</label>
-            <textarea
-              class="form-control"
-              id="message"
-              rows="5"
-              placeholder="Votre message"
-              required
-            ></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary">Envoyer</button>
-        </form>
-      </section>
+    <div class="parallaxv" style="min-height: 180px"></div>
 
-      <!-- FAQ -->
-      <section id="faq" class="mb-5" style="color: #ffffff">
-        <h2>FAQ - Questions Fréquentes</h2>
-        <div class="accordion" id="accordionExample">
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button
-                class="accordion-button"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseOne"
-                aria-expanded="true"
-                aria-controls="collapseOne"
-              >
-                Accordion Item #1
-              </button>
-            </h2>
-            <div
-              id="collapseOne"
-              class="accordion-collapse collapse show"
-              data-bs-parent="#accordionExample"
-            >
-              <div class="accordion-body">
-                <strong>This is the first item's accordion body.</strong> It is
-                shown by default, until the collapse plugin adds the appropriate
-                classes that we use to style each element. These classes control
-                the overall appearance, as well as the showing and hiding via
-                CSS transitions. You can modify any of this with custom CSS or
-                overriding our default variables. It's also worth noting that
-                just about any HTML can go within the
-                <code>.accordion-body</code>, though the transition does limit
-                overflow.
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseTwo"
-                aria-expanded="false"
-                aria-controls="collapseTwo"
-              >
-                Accordion Item #2
-              </button>
-            </h2>
-            <div
-              id="collapseTwo"
-              class="accordion-collapse collapse"
-              data-bs-parent="#accordionExample"
-            >
-              <div class="accordion-body">
-                <strong>This is the second item's accordion body.</strong> It is
-                hidden by default, until the collapse plugin adds the
-                appropriate classes that we use to style each element. These
-                classes control the overall appearance, as well as the showing
-                and hiding via CSS transitions. You can modify any of this with
-                custom CSS or overriding our default variables. It's also worth
-                noting that just about any HTML can go within the
-                <code>.accordion-body</code>, though the transition does limit
-                overflow.
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseThree"
-                aria-expanded="false"
-                aria-controls="collapseThree"
-              >
-                Accordion Item #3
-              </button>
-            </h2>
-            <div
-              id="collapseThree"
-              class="accordion-collapse collapse"
-              data-bs-parent="#accordionExample"
-            >
-              <div class="accordion-body">
-                <strong>This is the third item's accordion body.</strong> It is
-                hidden by default, until the collapse plugin adds the
-                appropriate classes that we use to style each element. These
-                classes control the overall appearance, as well as the showing
-                and hiding via CSS transitions. You can modify any of this with
-                custom CSS or overriding our default variables. It's also worth
-                noting that just about any HTML can go within the
-                <code>.accordion-body</code>, though the transition does limit
-                overflow.
-              </div>
-            </div>
-          </div>
+    <!------------------------------------------------------------------ FIN NAVBAR -------------------------------------------------------->
+
+    <!------------------------------------------------------------------ FIN MAIN -------------------------------------------------------->
+    <!---------------------------------------------------------- Formulaire -------------------------------------------------------->
+
+    <div class="container">
+      <div class="formulaire" style="padding-bottom: 50px;">
+        <h2 style="text-align: center; color: #ffffff; padding: 50px;">
+          Nous Contacter
+        </h2>
+        <div class="form-floating">
+          <input
+            type="text"
+            class="form-control"
+            id="floatingText"
+            placeholder="Nom"
+            required
+          />
+          <label for="floatingText">Nom</label>
         </div>
-      </section>
+        <br />
+        <div class="form-floating mb-3">
+          <input
+            type="email"
+            class="form-control"
+            id="floatingInput"
+            placeholder="nom@exemple.com"
+            required
+          />
+          <label for="floatingInput">Adresse e-mail</label>
+        </div>
+        <div class="form-floating">
+          <textarea
+            class="form-control"
+            placeholder="Laisse un message"
+            id="floatingTextarea2"
+            style="height: 100px"
+            required
+          ></textarea>
+          <label for="floatingTextarea2">Message</label>
+          <br />
+        </div>
+        <button type="submit" class="btn btn-dark envoyer">Envoyer</button>
+      </form>
+      </div>
+    </div>
+    <!---------------------------------------------------------- FAQQQQQ -------------------------------------------------------->
+      <div class="parallaxv" style="min-height: 80px;"></div>
+      <div class="faq" style="padding-top: 30px; padding-bottom: 100px;">
+        <h2 style="text-align: center;color: #ffffff;"> FAQ</h2> <br>z
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Comment acheter un article sur Restyle ?
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <p>Pour acheter un article, connectez-vous à votre compte, explorez les annonces, et cliquez sur "Acheter" pour l’article qui vous intéresse. Vous serez redirigé vers une page sécurisée pour finaliser votre paiement.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Comment modifier ou supprimer une annonce ?
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                 <p>Rendez-vous dans votre profil, accédez à la section "Mes annonces" et sélectionnez l'annonce que vous souhaitez modifier ou supprimer. Utilisez les boutons correspondants pour effectuer vos changements. </p>                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Que faire si je ne reçois pas mon article ?
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>Si vous n’avez pas reçu votre article dans les délais estimés, contactez d'abord le vendeur via la messagerie intégrée. Si le problème persiste, contactez notre équipe via le formulaire de contact pour ouvrir un litige.</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    Comment fonctionne la sécurité des paiements ?
+                  </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p>Toutes les transactions effectuées sur Restyle sont sécurisées par un système de paiement tiers de confiance. Vos informations bancaires sont cryptées et ne sont jamais partagées avec le vendeur.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                   Comment signaler un utilisateur ou une annonce suspecte ?
+                  </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p>Si vous remarquez une annonce ou un comportement suspect, utilisez le bouton "Signaler" disponible sur la page de l’annonce ou dans le profil de l'utilisateur concerné. Vous pouvez également nous contacter directement via le formulaire de contact.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                    Puis-je annuler un achat ou demander un remboursement ?
+                  </button>
+                </h2>
+                <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p>Les annulations ou remboursements sont possibles dans certaines conditions. Consultez nos Conditions Générales d'Utilisation pour en savoir plus ou contactez notre équipe via le formulaire pour examiner votre situation.</p>
+                  </div>
+                </div>
+              </div>
+          </div>
+      </div>
 
-      <!-- Informations de contact -->
-      <section id="contact-info" style="color: #ffffff">
-        <h2>Informations de Contact</h2>
-        <p>Vous pouvez également nous contacter via :</p>
-        <ul class="list-unstyled">
-          <li><strong>Email :</strong> support@restyle.com</li>
-          <li><strong>Adresse :</strong> 123 Rue Imaginaire, Paris, France</li>
-          <li><strong>Téléphone :</strong> +33 1 23 45 67 89</li>
-        </ul>
-      </section>
-    </main>
-    <!--------------------------------------------------------------------------------------------- FOOTERRRRR ------------------------------------------------>
-    <div class="parallaxv" style="min-height: 100px"></div>
+     <!---------------------------------------------------------- Contact -------------------------------------------------------->
+     <div class="parallaxv" style="min-height: 50px"></div>
+
+     <div class="contactc" style="padding-top: 50px; padding-bottom: 50px;display: flex; justify-content: center;">
+     <div class="card" style="width: 30rem; align-items: center;">
+        <div class="card-body">
+          <h5 class="card-title" style="text-align: center; font-size: 30px; color: #c4236e;font-weight: 800;">Informations de Contact</h5>
+          <h6 style="font-size: 20px;">Vous pouvez également nous contacter via :</h6>
+          <p class="infob">E-mail : <a href="mailto:cineflix@gmail.com" class="infoa"
+            >restyle@entreprise.com</a
+          ></p>
+          <p class="infob">Tel: <a href="tel:+33623568955" class="infoa"
+            >+33 2 23 56 89 55</a
+          > </p>
+         <p class="infob">Adresse: <strong style="color: #f70776; font-weight: 600;"> 25 rue des Arts 76000 Rouen</strong></p>
+        </div>
+      </div>
+     </div>
+
+
+    </div>
+
+    <!--------------------------------------------------------------------------------------------- FOOTER ------------------------------------------------>
+    <div class="parallaxv" style="min-height: 180px"></div>
 
     <footer
       class="py-4"
@@ -337,7 +334,7 @@
             >
               <li style="text-align: center">
                 <a
-                  href="https://www.facebook.com/"
+                  href="https://www.facebook.com/groups/448485336360350"
                   target="_blank"
                   style="text-align: center"
                 >
@@ -395,16 +392,17 @@
 
     <!---------------------------------------------------------------- footer --------------------------------------------------------------------------------------->
     <!------------------------------------------------------------------ JAVA -------------------------------------------------------->
-    <!------------------------------------------------------------------ JAVA -------------------------------------------------------->
-    <!------------------------------------------------------------------ JAVA -------------------------------------------------------->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
+    <!-- Bootstrap JS -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <!-- AOS Library -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!------------------------------------------------------------------ FIN JAVA -------------------------------------------------------->
   </body>
 </html>

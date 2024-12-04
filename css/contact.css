@@ -58,9 +58,6 @@ body {
 /***************************************************************** NAVBARR ***********************************************************/
 /***************************************************************** NAVBARR ***********************************************************/
 /***************************************************************** NAVBARR ***********************************************************/
-/***************************************************************** HERO SECTION ***********************************************************/
-/***************************************************************** HERO SECTION ***********************************************************/
-/***************************************************************** HERO SECTION ***********************************************************/
 
 .parallaxv {
   background: url("../img/index/parallaxv.jpg") no-repeat;
@@ -70,6 +67,63 @@ body {
   background-size: cover;
   overflow: hidden;
 }
+
+.formulaire {
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+.envoyer {
+  background-color: #f70776;
+  font-weight: 700;
+}
+
+.accordion-button {
+  background-color: #ffffff;
+  color: #f70776;
+  font-weight: 700;
+}
+.accordion-button:hover {
+  background-color: #f70776;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.faq {
+  padding-left: 300px;
+  padding-right: 300px;
+}
+
+.contactc {
+  font-size: 1.2rem;
+}
+
+.infoa {
+  text-decoration: none;
+  color: #f70776;
+  font-weight: 600;
+}
+
+.infoa:hover {
+  color: #000000;
+}
+
+.infob {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+@media (max-width: 1016px) {
+  .formulaire {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .faq {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
 /************************************************************** FOOTERRRR ********************************************************************/
 
 .rsxx {
