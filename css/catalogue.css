@@ -59,7 +59,15 @@ body {
 /***************************************************************** NAVBARR ***********************************************************/
 /***************************************************************** NAVBARR ***********************************************************/
 /***************************************************************** NAVBARR ***********************************************************/
+h1{
+  text-align: center;
+  color: #ffffffc8;
+  padding: 50px;
+  font-size: 50px;
+}
+
 /* Section des filtres */
+
 .filter-section {
   background-color: #ffffffc8; /* Blanc transparent */
   padding: 15px;
@@ -70,10 +78,11 @@ body {
 
 .filter-section select,
 .filter-section input {
-  background-color: #333333; /* Fond noir-gris très foncé */
-  color: white; /* Texte blanc */
+  background-color: #ffffffc8; /* Fond noir-gris très foncé */
+  color: #333333; /* Texte blanc */
   border: 1px solid #f70776; /* Bordure rose */
   font-size: 18px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* Section des filtres : Effet au focus */
@@ -87,11 +96,22 @@ body {
 .filter-section select:hover,
 .filter-section input:hover {
   color: white; /* Texte blanc au survol */
+  background-color: #f70776;
+}
+
+/* Style général pour les flèches */
+.form-select {
+  background-color: white;
+}
+
+.form-select option {
+  background-color: #ffffff; /* Fond des options */
+  color: #333333; /* Couleur du texte des options */
 }
 
 /* Bouton de recherche avec loupe */
 #searchbar .btn {
-  background-color: #333333; /* Fond noir */
+  background-color: #ffffffc8; /* Fond noir */
   color: #f70776; /* Icône en rose */
   border: 1px solid #f70776; /* Bordure rose */
 }
@@ -116,6 +136,7 @@ body {
 
 #searchbar input:focus {
   border-color: #0099ff; /* Bordure bleue au focus sur la barre de recherche */
+  color: #333333!important;
 }
 
 /***************************************** Cartes des produits ***************************************************/
@@ -125,6 +146,11 @@ body {
   border-radius: 8px;
   overflow: hidden;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Transition sur l'effet de survol */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 350px; /* Ajustez selon vos besoins */
+  height: 100%; /* Assure une taille uniforme */
 }
 
 .product-card:hover {
@@ -136,12 +162,24 @@ body {
   width: 100%;
   height: auto;
   border-bottom: 2px solid #f70776; /* Bordure rose sous l'image */
+  max-height: 300px; /* Taille d’image contrôlée */
+  object-fit: cover;
+  margin-bottom: 1rem;
 }
 
 .product-card-title {
-  font-size: 22px;
   color: #f70776; /* Titre rose */
   margin-top: 15px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  height: 2.5rem; /* Assurez une hauteur fixe */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin: 0; /* Supprime les marges par défaut */
+  flex-grow: 1; /* Le titre occupe tout l'espace disponible */
+  text-align: left; /* Assure que le texte reste aligné à gauche */
+  
 }
 
 .product-price {
@@ -149,23 +187,27 @@ body {
   font-weight: 700;
   color: #0099ff; /* Prix bleu clair */
   margin-top: 5px;
+  margin: 0.5rem 0; /* Uniformisez les marges */
 }
 
 .category-label {
   font-size: 18px;
   color: #333333; /* Catégorie en gris foncé */
-  margin-top: 5px;
+  padding: -20px;
+  margin-top: -5px!important;
+ 
 }
 
 .product-condition {
   font-size: 18px;
   color: #555; /* Gris pour la condition */
-  margin-top: 5px;
+  padding-bottom: 15px;
 }
 
 .condition-label {
   font-weight: bold;
   color: #27ae60; /* Vert pour l'état */
+  margin: 0.5rem 0; /* Uniformisez les marges */
 }
 
 .actions {
@@ -180,12 +222,14 @@ body {
   border: none;
   color: #f7077771; /* Rose pour l'icône */
   font-size: 20px;
-  cursor: pointer;
-  transition: color 0.3s ease;
+  margin-left: 10px; /* Écart avec le titre */
+  transition: color 0.3s ease, transform 0.3s ease;
+  padding-bottom: 20px;
 }
 
 .btn-favorite:hover {
   color: #c7005b; /* Plus foncé au survol */
+  transform: scale(1.2); /* Zoom au survol */
 }
 
 .btn-cta {
@@ -204,6 +248,7 @@ body {
   transition: background 0.3s ease, border-color 0.3s ease, transform 0.3s ease,
     box-shadow 0.3s ease; /* Transition améliorée */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre discrète */
+  margin-top: auto; /* Place le bouton en bas */
 }
 
 .btn-cta:hover {
@@ -221,6 +266,28 @@ body {
   outline: none; /* Supprimer les contours par défaut */
   box-shadow: 0 0 0 3px rgba(255, 77, 166, 0.5); /* Halo doux pour accessibilité */
 }
+
+@media (max-width: 768px) {
+  .product-card {
+    min-height: 300px; /* Taille adaptée pour mobiles */
+  }
+  .product-card-title {
+    font-size: 1.4rem;
+    height: 2rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .product-card {
+    min-height: 350px; /* Taille adaptée pour les tablettes */
+  }
+
+  .product-card-title {
+    font-size: 1.6rem; /* Taille du texte du titre pour une lisibilité optimisée */
+    height: 2.5rem; /* Hauteur du titre ajustée pour les tablettes */
+  }
+}
+
 
 .parallaxv {
   background: url("../img/index/parallaxv.jpg") no-repeat;
