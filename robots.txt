@@ -1,0 +1,14 @@
+#Indique aux robots des moteurs de recherche comment explorer le site Restyle
+
+User-agent: *  # S'applique à tous les robots
+Allow: /
+
+Disallow: /politiquedeco.html
+Disallow: /mentionslegales.html
+Disallow: /inscription.html
+Disallow: /contact.html
+Disallow: /favoris.html
+Disallow: /profil.html
+
+
+Sitemap: https://www.re-style.fr/sitemap.xml
