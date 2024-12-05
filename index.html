@@ -50,10 +50,19 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <script
       src="https://kit.fontawesome.com/cd8dd3426c.js"
       crossorigin="anonymous"
     ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
     <link rel="stylesheet" href="css/style.css" />
     <title>Restyle - Articles de Seconde Main</title>
     <title>Document</title>
@@ -186,8 +195,8 @@
                 de lui offrir un nouveau chapitre.
               </p>
               <a
-                href="#shop"
-                class="btn btn-dark btn-lg rounded-pill shadow-lg glow-on-hover btnhero"
+                href="html/catalogue.html"
+                class="btn btn-dark btn-lg rounded-pill shadow-lg glow-on-hover btnhero animate__animated animate__flash animate__repeat-2 2"
               >
                 Explorer la collection
               </a>
@@ -202,10 +211,15 @@
     <section class="hero-carousel-section py-5">
       <div class="container text-center text-white">
         <!-- Titre principal -->
-        <h2 class="display-3 fw-bold mb-4" style="color: #f70776">
+        <h2
+          class="display-3 fw-bold mb-4"
+          style="color: #f70776"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
           Découvrez la Mode Responsable
         </h2>
-        <p class="lead mb-5">
+        <p class="lead mb-5" data-aos="fade-up" data-aos-duration="1000">
           ReStyle vous propose des articles uniques, à la fois stylés et
           durables. Faites partie du changement.
         </p>
@@ -306,34 +320,36 @@
     <!------------------------------------------------------------------ section catégories -------------------------------------------------------->
     <section class="py-5" style="background-color: #1c1c1c">
       <div class="container text-center">
-        <h2 class="display-3 fw-bold mb-4" style="color: #f70776">
+        <h2
+          class="display-3 fw-bold mb-4"
+          style="color: #f70776"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
           Explorez nos 3 catégories
         </h2>
         <div class="row g-4">
-          <!-- Genre 1: Romance -->
-          <div class="col-md-4">
+          <div class="col-md-4" data-aos="flip-left" data-aos-duration="1500">
             <a
-              href="romance.html"
+              href="html/catalogue.html#vetement"
               class="tile d-flex justify-content-center align-items-center"
               style="background-image: url('img/index/chaussures.jpg')"
             >
               <h3>Vêtements</h3>
             </a>
           </div>
-          <!-- Genre 2: Science-Fiction -->
-          <div class="col-md-4">
+          <div class="col-md-4" data-aos="flip-left" data-aos-duration="2500">
             <a
-              href="science_fiction.html"
+              href="html/catalogue.html#accessoires"
               class="tile d-flex justify-content-center align-items-center"
               style="background-image: url('img/index/accessoires.jpg')"
             >
               <h3>Accessoires</h3>
             </a>
           </div>
-          <!-- Genre 3: Comédie -->
-          <div class="col-md-4">
+          <div class="col-md-4" data-aos="flip-left" data-aos-duration="3000">
             <a
-              href="comedie.html"
+              href="html/catalogue.html#deco"
               class="tile d-flex justify-content-center align-items-center"
               style="background-image: url('img/index/deco.jpg')"
             >
@@ -351,11 +367,15 @@
     <!-- Section Newsletter -->
     <section class="newsletter-section py-5 bg-light">
       <div class="container text-center">
-        <h2 class="mb-4">Rejoignez notre Newsletter</h2>
+        <h2
+          class="mb-4 animate__animated animate__flash animate__infinite infinite"
+        >
+          Rejoignez notre Newsletter
+        </h2>
         <p>Restez à jour avec nos dernières nouveautés et offres exclusives.</p>
         <form>
           <!-- Champ e-mail -->
-          <div class="mb-3">
+          <div class="mb-3 emailenter50">
             <input
               type="email"
               class="form-control"
