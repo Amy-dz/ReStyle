@@ -3,35 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Restyle - Achetez et vendez des articles de seconde main avec style. Découvrez des produits uniques et abordables pour un mode de vie durable."
+    <title>Catalogue ReStyle - Produits de Seconde Main : Mode, Accessoires et Décoration</title>
+   <!-- Meta Description -->
+  <meta name="description" content="Découvrez le catalogue ReStyle : vêtements, accessoires et décorations de seconde main. Des produits uniques, éco-responsables et abordables."/>
     />
-    <meta property="og:title" content="Restyle - Articles de Seconde Main" />
-    <meta
-      property="og:description"
-      content="Trouvez des vêtements, accessoires et bien plus encore. Restyle, votre plateforme dédiée au seconde main."
-    />
-    <meta
-      property="og:image"
-      content="https://www.restyle.com/images/preview.jpg"
-    />
-    <meta property="og:url" content="https://www.restyle.com" />
-    <meta property="og:type" content="website" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta
-      name="twitter:title"
-      content="Restyle - Achetez et vendez avec style"
-    />
-    <meta
-      name="twitter:description"
-      content="Un large choix d'articles de seconde main pour un avenir plus vert. Rejoignez la communauté Restyle."
-    />
-    <meta
-      name="twitter:image"
-      content="https://www.restyle.com/images/twitter-preview.jpg"
+    <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Catalogue ReStyle - Produits de Seconde Main : Mode, Accessoires et Décoration" />
+  <meta property="og:description" content="Parcourez le catalogue ReStyle : vêtements, accessoires et décorations de seconde main. Adoptez un style unique et responsable." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.restyle.com/catalogue" />
+  <meta property="og:image" content="https://www.restyle.com/images/catalogue-og-image.jpg" />
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Catalogue ReStyle - Mode et Décoration Seconde Main" />
+  <meta name="twitter:description" content="Parcourez le catalogue ReStyle : articles uniques de mode, accessoires et décoration. Seconde main éthique et abordable." />
+  <meta name="twitter:image" content="https://www.restyle.com/images/twitter-catalogue-image.jpg" />
+
+  <!-- Robots -->
+  <meta name="robots" content="index, follow" />
+</head>
     />
 
     <link rel="icon" type="image/png" href="../img/logo.png" />
@@ -182,8 +173,9 @@
       <!------------------------------------------------------------------ MAIN -------------------------------------------------------->
       <!------------------- Main Content ------------------->
       
-      <div class="parallaxv" style="min-height: 270px"></div>
-      <main class="container mt-5" style="padding: 90px;">
+      <div class="parallaxv" style="min-height: 150px"></div>
+      <h1>Notre Catalogue</h1>
+      <main class="container mt-5" style="padding: 90px;padding-top: 20px;">
         <!------------------- Filter Section ------------------->
         <section class="filter-section">
           <form class="row g-3">
@@ -217,7 +209,7 @@
               <input
                 type="text"
                 class="form-control"
-                placeholder="Rechercher un produit..."
+                placeholder="Rechercher un produit..." style="color: #333333!important;"
                 aria-label="Search"
                 />
                 <button class="btn btn-outline-light" type="button">
@@ -235,10 +227,10 @@
             
             <div class="col-12 col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="100" >
               <div class="card product-card">
-                <img src="../img/catalogue/chaussure.jpg" alt="Chaussures à plateforme blanche" />
+                <img src="../img/catalogue/chaussure.jpg" alt="Chaussures à plateforme blanche" loading="lazy" />
                 <div class="p-3">
                   <div class="d-flex justify-content-between align-items-center">
-                    <h5 class="product-card-title">Chaussures élégantes</h5>
+                    <h5 class="product-card-title">Chaussures à plateformes</h5>
                     <button class="btn-favorite"><i class="fas fa-star"></i></button>
                   </div>
                   <p class="category-label">Catégorie: Chaussures</p>
@@ -246,7 +238,7 @@
                   <p class="product-condition">État : <span class="condition-label">Neuf</span></p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div></div>
-                    <a href="chausel.html"><button class="btn-cta">Voir le produit</button></a>
+                    <a href="chausel.html"><button class="btn-cta" aria-label="voir le produit chaussures à plateformes">Voir le produit</button></a>
                   </div>
                 </div>
               </div>
@@ -255,18 +247,18 @@
             <!-- Produit 2 -->
             <div class="col-12 col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="200">
               <div class="card product-card">
-                <img src="../img/catalogue/basket.jpg" alt="Paire de baskets élégantes" />
+                <img src="../img/catalogue/basket.jpg" alt="Paire de baskets élégantes" loading="lazy" />
                 <div class="p-3">
                   <div class="d-flex justify-content-between align-items-center">
                     <h5 class="product-card-title">Baskets élégantes</h5>
                     <button class="btn-favorite"><i class="fas fa-star"></i></button>
                   </div>
                   <p class="category-label">Catégorie: Chaussures</p>
-                  <p class="product-price">89,99€</p>
+                  <p class="product-price">39,99€</p>
                   <p class="product-condition">État : <span class="condition-label">Très bon état</span></p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div></div>
-                    <button class="btn-cta">Voir le produit</button>
+                    <button class="btn-cta" aria-label="voir le produit Baskets élégantes">Voir le produit</button>
                   </div>
                 </div>
               </div>
@@ -275,18 +267,18 @@
             <!-- Produit 3 -->
             <div class="col-12 col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="300">
               <div class="card product-card">
-                <img src="../img/catalogue/talons.jpg" alt="Paire de talons chics" />
+                <img src="../img/catalogue/talons.jpg" alt="Paire de talons chics" loading="lazy" />
                 <div class="p-3">
                   <div class="d-flex justify-content-between align-items-center">
                     <h5 class="product-card-title">Talons chics</h5>
                     <button class="btn-favorite"><i class="fas fa-star"></i></button>
                   </div>
                   <p class="category-label">Catégorie: Chaussures</p>
-                  <p class="product-price">69,99€</p>
+                  <p class="product-price">59,99€</p>
                   <p class="product-condition">État : <span class="condition-label">Bon état</span></p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div></div>
-                    <button class="btn-cta">Voir le produit</button>
+                    <button class="btn-cta" aria-label="voir le produit Talons chics">Voir le produit</button>
                   </div>
                 </div>
               </div>
@@ -295,18 +287,18 @@
             <!-- Produit 4 -->
             <div class="col-12 col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="400">
               <div class="card product-card">
-                <img src="../img/catalogue/converse.jpg" alt="Paire de converse à motif fleurie"/>
+                <img src="../img/catalogue/converse.jpg" alt="Paire de converse à motif fleurie" loading="lazy"/>
                 <div class="p-3">
                   <div class="d-flex justify-content-between align-items-center">
                     <h5 class="product-card-title">Converses fleuries</h5>
                     <button class="btn-favorite"><i class="fas fa-star"></i></button>
                   </div>
                   <p class="category-label">Catégorie: Chaussures</p>
-                  <p class="product-price">59,99€</p>
+                  <p class="product-price">55,99€</p>
                   <p class="product-condition">État : <span class="condition-label">Neuf</span></p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div></div>
-                    <button class="btn-cta" id="vetement">Voir le produit</button>
+                    <button class="btn-cta" aria-label="voir le produit Converses fleuries" id="vetement">Voir le produit</button>
                   </div>
                 </div>
               </div>
@@ -314,7 +306,7 @@
             <!-- Produit 5 -->
             <div class="col-12 col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="500" >
               <div class="card product-card">
-                <img src="../img/catalogue/gilet.jpg" alt="Gilet en laine"/>
+                <img src="../img/catalogue/gilet.jpg" alt="Gilet en laine" loading="lazy"/>
                 <div class="p-3">
                   <div class="d-flex justify-content-between align-items-center">
                     <h5 class="product-card-title">Gilet en laine</h5>
@@ -325,7 +317,7 @@
                   <p class="product-condition">État : <span class="condition-label">Très bon état</span></p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div></div>
-                    <a href="gilet.html"><button class="btn-cta">Voir le produit</button></a>
+                    <a href="gilet.html"><button class="btn-cta" aria-label="voir le produit Gilet en laine">Voir le produit</button></a>
                   </div>
                 </div>
               </div>
@@ -334,7 +326,7 @@
             <!-- Produit 6 -->
             <div class="col-12 col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="600">
              <div class="card product-card">
-              <img src="../img/catalogue/robe.jpg" alt="Robe élégante" />
+              <img src="../img/catalogue/robe.jpg" alt="Robe élégante" loading="lazy" />
               <div class="p-3">
                 <div class="d-flex justify-content-between align-items-center">
                  <h5 class="product-card-title">Robe élégante</h5>
@@ -345,7 +337,7 @@
                <p class="product-condition">État : <span class="condition-label">Très bon état</span></p>
                <div class="d-flex justify-content-between align-items-center">
                  <div></div>
-                 <button class="btn-cta" id="pantalon">Voir le produit</button>
+                 <button class="btn-cta" aria-label="voir le produit Robe élégante" id="pantalon">Voir le produit</button>
                </div>
              </div>
            </div>
@@ -354,7 +346,7 @@
   <!-- Produit 7 -->
   <div class="col-12 col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="700">
     <div class="card product-card">
-      <img src="../img/catalogue/pantalon.jpg" alt="Pantalon en jean classique bleu" />
+      <img src="../img/catalogue/pantalon.jpg" alt="Pantalon en jean classique bleu" loading="lazy" />
       <div class="p-3">
         <div class="d-flex justify-content-between align-items-center">
           <h5 class="product-card-title">Pantalon classique</h5>
@@ -365,7 +357,7 @@
         <p class="product-condition">État : <span class="condition-label">Bon état</span></p>
         <div class="d-flex justify-content-between align-items-center">
           <div></div>
-          <button class="btn-cta">Voir le produit</button>
+          <button class="btn-cta" aria-label="voir le produit Pantalon Classique">Voir le produit</button>
         </div>
       </div>
     </div>
@@ -374,7 +366,7 @@
   <!-- Produit 8 -->
   <div class="col-12 col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="800">
     <div class="card product-card">
-      <img src="../img/catalogue/ensemble.webp" alt="Ensemble chic" />
+      <img src="../img/catalogue/ensemble.webp" alt="Ensemble chic" loading="lazy" />
       <div class="p-3">
         <div class="d-flex justify-content-between align-items-center">
           <h5 class="product-card-title">Ensemble chic</h5>
@@ -385,7 +377,7 @@
         <p class="product-condition">État : <span class="condition-label">Neuf</span></p>
         <div class="d-flex justify-content-between align-items-center">
           <div></div>
-          <button class="btn-cta" id="accessoires">Voir le produit</button>
+          <button class="btn-cta" aria-label="voir le produit Ensemble chic" id="accessoires">Voir le produit</button>
         </div>
       </div>
     </div>
@@ -394,7 +386,7 @@
   <!-- Produit 9 -->
   <div class="col-12 col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="900">
     <div class="card product-card">
-      <img src="../img/catalogue/sac.jpg" alt="Sac en cuir" />
+      <img src="../img/catalogue/sac.jpg" alt="Sac en cuir" loading="lazy" />
       <div class="p-3">
         <div class="d-flex justify-content-between align-items-center">
           <h5 class="product-card-title">Sac en cuir</h5>
@@ -405,7 +397,7 @@
         <p class="product-condition">État : <span class="condition-label">Bon état</span></p>
         <div class="d-flex justify-content-between align-items-center">
           <div></div>
-          <a href="saccuir.html"><button class="btn-cta">Voir le produit</button></a>
+          <a href="saccuir.html"><button class="btn-cta" aria-label="voir le produit Sac en cuir">Voir le produit</button></a>
         </div>
       </div>
     </div>
@@ -414,7 +406,7 @@
   <!-- Produit 10 -->
   <div class="col-12 col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="1000">
     <div class="card product-card">
-      <img src="../img/catalogue/collier.jpg" alt="Collier à perles blanches avec un noeud noir" />
+      <img src="../img/catalogue/collier.jpg" alt="Collier à perles blanches avec un noeud noir" loading="lazy" />
       <div class="p-3">
         <div class="d-flex justify-content-between align-items-center">
           <h5 class="product-card-title">Collier à perles</h5>
@@ -425,7 +417,7 @@
         <p class="product-condition">État : <span class="condition-label">Très bon état</span></p>
         <div class="d-flex justify-content-between align-items-center">
           <div></div>
-          <button class="btn-cta">Voir le produit</button>
+          <button class="btn-cta" aria-label="voir le produit Collier à perles">Voir le produit</button>
         </div>
       </div>
     </div>
@@ -434,18 +426,18 @@
   <!-- Produit 11 -->
   <div class="col-12 col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="1100">
     <div class="card product-card">
-      <img src="../img/catalogue/lunette.jpg" alt="Lunettes de soleil" />
+      <img src="../img/catalogue/lunette.jpg" alt="Lunettes de soleil" loading="lazy" />
       <div class="p-3">
         <div class="d-flex justify-content-between align-items-center">
           <h5 class="product-card-title">Lunettes de soleil</h5>
           <button class="btn-favorite"><i class="fas fa-star"></i></button>
         </div>
         <p class="category-label">Catégorie: Accessoires</p>
-        <p class="product-price">39,99€</p>
+        <p class="product-price">19,99€</p>
         <p class="product-condition">État : <span class="condition-label">Neuf</span></p>
         <div class="d-flex justify-content-between align-items-center">
           <div></div>
-          <button class="btn-cta">Voir le produit</button>
+          <button class="btn-cta" aria-label="voir le produit Lunettes de soleil">Voir le produit</button>
         </div>
       </div>
     </div>
@@ -454,7 +446,7 @@
   <!-- Produit 12 -->
   <div class="col-12 col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="1200">
     <div class="card product-card">
-      <img src="../img/catalogue/ceinture.jpg" alt="Ceinture chaîne en argent" />
+      <img src="../img/catalogue/ceinture.jpg" alt="Ceinture chaîne en argent" loading="lazy" />
       <div class="p-3">
         <div class="d-flex justify-content-between align-items-center">
           <h5 class="product-card-title">Ceinture en argent</h5>
@@ -465,7 +457,7 @@
         <p class="product-condition">État : <span class="condition-label">Bon état</span></p>
         <div class="d-flex justify-content-between align-items-center">
           <div></div>
-          <button class="btn-cta" id="deco">Voir le produit</button>
+          <button class="btn-cta" aria-label="voir le produit Ceinture en argent" id="deco">Voir le produit</button>
         </div>
       </div>
     </div>
@@ -474,7 +466,7 @@
   <!-- Produit 13 -->
   <div class="col-12 col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="1300">
     <div class="card product-card">
-      <img src="../img/catalogue/vase.jpg" alt="Vase en céramique" />
+      <img src="../img/catalogue/vase.jpg" alt="Vase en céramique" loading="lazy" />
       <div class="p-3">
         <div class="d-flex justify-content-between align-items-center">
           <h5 class="product-card-title">Vase en céramique</h5>
@@ -494,7 +486,7 @@
   <!-- Produit 14 -->
 <div class="col-12 col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="1400">
     <div class="card product-card">
-      <img src="../img/catalogue/coussin.jpg" alt="Coussin en forme de fleur décoratif" />
+      <img src="../img/catalogue/coussin.jpg" alt="Coussin en forme de fleur décoratif" loading="lazy" />
       <div class="p-3">
         <div class="d-flex justify-content-between align-items-center">
           <h5 class="product-card-title">Coussin décoratif</h5>
@@ -505,7 +497,7 @@
         <p class="product-condition">État : <span class="condition-label">Bon état</span></p>
         <!-- Alignement du bouton "Voir le produit" à droite -->
         <div class="text-end">
-          <button class="btn-cta">Voir le produit</button>
+          <button class="btn-cta" aria-label="voir le produit Coussin décoratif">Voir le produit</button>
         </div>
       </div>
     </div>
@@ -514,18 +506,18 @@
   <!-- Produit 15 -->
   <div class="col-12 col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="1500">
     <div class="card product-card">
-      <img src="../img/catalogue/telephone.jpg" alt="Téléphone vintage rose" />
+      <img src="../img/catalogue/telephone.jpg" alt="Téléphone vintage rose" loading="lazy" />
       <div class="p-3">
         <div class="d-flex justify-content-between align-items-center">
           <h5 class="product-card-title">Téléphone vintage rose</h5>
           <button class="btn-favorite"><i class="fas fa-star"></i></button>
         </div>
         <p class="category-label">Catégorie: Décration</p>
-        <p class="product-price">399,99€</p>
+        <p class="product-price">29,99€</p>
         <p class="product-condition">État : <span class="condition-label">Bon état</span></p>
         <!-- Alignement du bouton "Voir le produit" à droite -->
         <div class="text-end">
-          <button class="btn-cta">Voir le produit</button>
+          <button class="btn-cta" aria-label="voir le produit Téléphone vintage rose">Voir le produit</button>
         </div>
       </div>
     </div>
@@ -534,18 +526,18 @@
   <!-- Produit 16 -->
   <div class="col-12 col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="1600">
     <div class="card product-card">
-      <img src="../img/catalogue/miroir.jpg" alt="Miroir vintage en bois" />
+      <img src="../img/catalogue/miroir.jpg" alt="Miroir vintage en bois" loading="lazy" />
       <div class="p-3">
         <div class="d-flex justify-content-between align-items-center">
           <h5 class="product-card-title">Miroir vintage</h5>
           <button class="btn-favorite"><i class="fas fa-star"></i></button>
         </div>
         <p class="category-label">Catégorie: Décoration</p>
-        <p class="product-price">99,99€</p>
+        <p class="product-price">9,99€</p>
         <p class="product-condition">État : <span class="condition-label">Très bon état</span></p>
         <!-- Alignement du bouton "Voir le produit" à droite -->
         <div class="text-end">
-          <button class="btn-cta">Voir le produit</button>
+          <button class="btn-cta" aria-label="voir le produit Miroir vintage">Voir le produit</button>
         </div>
       </div>
     </div>
@@ -557,7 +549,7 @@
               
      <!------------------------------------------------------------------ FIN MAIN -------------------------------------------------------->
 
-    <div class="parallaxv" style="min-height: 270px"></div>
+    <div class="parallaxv" style="min-height: 200px"></div>
     <!------------------------------------------------------------------ FIN MAIN -------------------------------------------------------->
     <!-------------------------------------------------------- FOOTERRR ------------------------------------------------------------------------->
     <footer class="text-white py-4">

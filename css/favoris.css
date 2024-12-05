@@ -71,6 +71,17 @@ h1 {
   text-align: center;
 }
 
+.trash {
+ color: #ffffff;
+ background-color: #333;
+ font-size: 25px;
+}
+.trash:hover {
+  color: #411c3e;
+  font-size: 25px;
+
+ }
+
 /***************************************************************** CARDS FAVORIS ***********************************************************/
 .product-cards {
   display: grid;
