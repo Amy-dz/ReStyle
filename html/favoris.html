@@ -3,38 +3,51 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Meta Title -->
+    <title>Favoris | ReStyle - Produits de Seconde Main</title>
+
+    <!-- Meta Description -->
     <meta
       name="description"
-      content="Restyle - Achetez et vendez des articles de seconde main avec style. Découvrez des produits uniques et abordables pour un mode de vie durable."
+      content="Page des favoris - ReStyle. Découvrez vos produits préférés, ajoutez-les au panier ou supprimez-les facilement."
     />
-    <meta property="og:title" content="Restyle - Articles de Seconde Main" />
+
+    <!-- Balises Open Graph -->
+    <meta
+      property="og:title"
+      content="Favoris | ReStyle - Produits de Seconde Main"
+    />
     <meta
       property="og:description"
-      content="Trouvez des vêtements, accessoires et bien plus encore. Restyle, votre plateforme dédiée au seconde main."
+      content="Découvrez vos articles favoris sur ReStyle. Ajoutez vos produits préférés au panier ou supprimez-les facilement."
     />
     <meta
       property="og:image"
-      content="https://www.restyle.com/images/preview.jpg"
+      content="https://www.restyle.com/images/favoris-og-image.jpg"
     />
-    <meta property="og:url" content="https://www.restyle.com" />
+    <!-- Image à partager sur les réseaux -->
+    <meta property="og:url" content="https://www.restyle.com/favoris" />
     <meta property="og:type" content="website" />
+    <meta property="og:locale" content="fr_FR" />
+
+    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta
       name="twitter:title"
-      content="Restyle - Achetez et vendez avec style"
+      content="Favoris | ReStyle - Produits de Seconde Main"
     />
     <meta
       name="twitter:description"
-      content="Un large choix d'articles de seconde main pour un avenir plus vert. Rejoignez la communauté Restyle."
+      content="Découvrez vos produits favoris sur ReStyle, votre site de mode et décoration de seconde main."
     />
     <meta
       name="twitter:image"
-      content="https://www.restyle.com/images/twitter-preview.jpg"
+      content="https://www.restyle.com/images/favoris-twitter-image.jpg"
     />
+    <!-- Image pour Twitter -->
 
-    <link rel="icon" type="image/png" href="../img/logo.png" />
+    <link rel="icon" href="../img/logo.png" type="image/png" />
     <!---------------------------------------------------------- LIENS --------------------------------------------------------->
     <!-- Bootstrap -->
     <link
@@ -179,57 +192,95 @@
     <!------------------------------------------------------------------ NAVBAR -------------------------------------------------------->
     <!------------------------------------------------------------------ NAVBAR -------------------------------------------------------->
     <!------------------------------------------------------------------ FIN NAVBAR -------------------------------------------------------->
-    <!-- MAIN CONTENT -->
-    <div class="parallaxv" style="min-height: 200px"></div>
+    <div class="parallaxv" style="min-height: 150px"></div>
+    <!-- Main content -->
     <main>
-      <div class="container">
-        <h1>Vos Annonces Favoris</h1>
+      <h1 class="titre">Vos favoris</h1>
 
-        <!-- Liste des favoris -->
-        <div class="product-cards">
-          <!-- Annonce 1 -->
-          <div class="product-card">
-            <img
-              src="https://via.placeholder.com/300"
-              alt="Image de l'annonce"
-            />
-            <div class="product-info">
-              <h3 class="product-card-title">Titre de l'Annonce 1</h3>
-              <p class="product-price">€120</p>
-              <button class="remove-favorite">Retirer des favoris</button>
+      <section class="favoris" style="padding: 20px">
+        <div class="card mb-3" style="max-width: 540px; margin: 0 auto">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="../img/catalogue/collier.jpg"
+                class="img-fluid rounded-start"
+                alt="Collier à perles blanches avec noeud papillion noir"
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Collier à perles avec noeud papillon</h5>
+                <p class="card-text">29,99 €</p>
+                <div class="boutons d-flex gap-2">
+                  <button type="button" class="btn btn-dark">
+                    <i class="fa fa-shopping-cart"></i> Ajouter
+                  </button>
+
+                  <button type="button" class="btn btn-dark">
+                    <i class="fa fa-trash"></i> Retirer
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
-
-          <!-- Annonce 2 -->
-          <div class="product-card">
-            <img
-              src="https://via.placeholder.com/300"
-              alt="Image de l'annonce"
-            />
-            <div class="product-info">
-              <h3 class="product-card-title">Titre de l'Annonce 2</h3>
-              <p class="product-price">€85</p>
-              <button class="remove-favorite">Retirer des favoris</button>
-            </div>
-          </div>
-
-          <!-- Annonce 3 -->
-          <div class="product-card">
-            <img
-              src="https://via.placeholder.com/300"
-              alt="Image de l'annonce"
-            />
-            <div class="product-info">
-              <h3 class="product-card-title">Titre de l'Annonce 3</h3>
-              <p class="product-price">€150</p>
-              <button class="remove-favorite">Retirer des favoris</button>
-            </div>
-          </div>
-
-          <!-- Vous pouvez ajouter d'autres cartes ici -->
         </div>
-      </div>
+
+        <div class="card mb-3" style="max-width: 540px; margin: 0 auto">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="../img/catalogue/converse.jpg"
+                class="img-fluid rounded-start"
+                alt="converse blanche à motif fleurie"
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Converse à motif fleurie</h5>
+                <p class="card-text">55,99 €</p>
+                <div class="boutons d-flex gap-2">
+                  <button type="button" class="btn btn-dark">
+                    <i class="fa fa-shopping-cart"></i> Ajouter
+                  </button>
+
+                  <button type="button" class="btn btn-dark">
+                    <i class="fa fa-trash"></i> Retirer
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card mb-3" style="max-width: 540px; margin: 0 auto">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="../img/catalogue/robe.jpg"
+                class="img-fluid rounded-start"
+                alt="Robe élégante noire"
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Robe élégante noire</h5>
+                <p class="card-text">89,99 €</p>
+                <div class="boutons d-flex gap-2">
+                  <button type="button" class="btn btn-dark">
+                    <i class="fa fa-shopping-cart"></i> Ajouter
+                  </button>
+
+                  <button type="button" class="btn btn-dark">
+                    <i class="fa fa-trash"></i> Retirer
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+
     <div class="parallaxv" style="min-height: 100px"></div>
     <!--------------------------------------------------------------------------------------------- FOOTER ------------------------------------------------>
     <!-------------------------------------------------------- FOOTERRR ------------------------------------------------------------------------->
@@ -357,10 +408,6 @@
             </ul>
           </div>
         </div>
-        <!-- Bas du footer -->
-        <div class="text-center mt-4">
-          <p>&copy; 2024 ReStyle. Tous droits réservés.</p>
-        </div>
       </div>
     </footer>
     <!---------------------------------------------------------------- footer --------------------------------------------------------------------------------------->
@@ -376,6 +423,9 @@
     <script>
       AOS.init();
     </script>
+
+    <!-- FontAwesome JS -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <!------------------------------------------------------------------ FIN JAVA -------------------------------------------------------->
   </body>
 </html>

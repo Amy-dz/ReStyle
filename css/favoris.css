@@ -59,108 +59,114 @@ body {
 /***************************************************************** NAVBARR ***********************************************************/
 /***************************************************************** NAVBARR ***********************************************************/
 
-/* SECTION PRINCIPALE */
-.container {
-  padding: 40px;
-  color: white;
-}
-
-h1 {
-  font-size: 2rem;
-  margin-bottom: 30px;
-  text-align: center;
-}
-
-.trash {
- color: #ffffff;
- background-color: #333;
- font-size: 25px;
-}
-.trash:hover {
-  color: #411c3e;
-  font-size: 25px;
-
- }
-
 /***************************************************************** CARDS FAVORIS ***********************************************************/
-.product-cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 20px;
+/* Titre de la page */
+.titre {
+  text-align: center;
+  color: #ffffffc8;
+  font-size: 2.5rem;
+  margin-top: 20px;
 }
 
-.product-card {
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid #f70776;
+
+.card {
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
   border-radius: 8px;
+  max-width: 540px;
+  margin: 0 auto;
   overflow: hidden;
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-  opacity: 0;
-  animation: fadeIn 0.5s forwards;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
 }
 
-@keyframes fadeIn {
-  to {
-    opacity: 1;
-  }
+.card:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
 }
 
-.product-card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
 
-.product-card img {
+.card img {
   width: 100%;
   height: auto;
-  max-height: 250px; /* Limite la taille des images si elles sont trop grandes */
-  border-bottom: 2px solid #f70776;
+  border-radius: 8px 0 0 8px;
 }
 
-.product-info {
+
+.card-body {
   padding: 15px;
+  text-align: left;
+}
+
+
+.card-title {
+  color: #f70776;
+  font-weight: bold;
+  font-size: 1.2rem;
   text-align: center;
 }
 
-.product-card-title {
-  font-size: 22px;
-  color: #f70776;
-  margin-top: 15px;
-}
-
-.product-price {
-  font-size: 21px;
-  font-weight: 700;
+/* Texte de la carte (prix) */
+.card-text {
+  font-size: 1.5rem;
   color: #0099ff;
-  margin-top: 5px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  text-align: center;
 }
 
-.remove-favorite {
-  background-color: #333; /* Couleur de fond gris */
-  color: white; /* Texte en blanc */
-  padding: 8px 20px;
-  border: 2px solid #f70776; /* Bordure rose */
+.boutons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.boutons button {
+  font-size: 0.9rem;
+  padding: 8px 14px;
+  margin: 5px;
   border-radius: 5px;
-  cursor: pointer;
-  margin-top: 15px;
-  transition: background-color 0.3s ease, border-color 0.3s ease,
-    color 0.3s ease;
+  text-align: center;
 }
 
-.remove-favorite:hover {
-  background-color: #d3d3d3; /* Gris clair au survol */
-  border-color: #f70776; /* Bordure rose inchangée au survol */
-  color: #f70776; /* Texte rose au survol */
+.boutons .btn-dark {
+  border-radius: 5px;
 }
 
-.remove-favorite:focus {
-  outline: 2px solid #c7005b;
-  outline-offset: 2px;
+.boutons .btn-dark i {
+  margin-right: 5px;
 }
 
-.product-card:focus {
-  outline: 2px solid #f70776;
-  outline-offset: 2px;
+.boutons .btn-dark:first-child {
+  background-color: #f70776;
+  border-color: #d63384;
+}
+
+.boutons .btn-dark:last-child {
+  background-color: #6c757d;
+  border-color: #6c757d;
+}
+
+.boutons button:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s ease;
+}
+
+@media (max-width: 768px) {
+  .card {
+    max-width: 100%;
+  }
+
+  .card-body {
+    padding: 10px;
+  }
+
+  .card-title {
+    font-size: 1.2rem;
+  }
+
+  .card-text {
+    font-size: 1.2rem;
+  }
 }
 
 .parallaxv {
