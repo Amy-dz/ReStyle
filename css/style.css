@@ -169,22 +169,22 @@ body {
 /***************************************************************** HERO SECTION ***********************************************************/
 
 .carousel-inner img {
-  height: 50vh; /* Hauteur limitée à 50% de la fenêtre */
-  object-fit: cover; /* Garde les proportions de l'image */
+  height: 50vh;
+  object-fit: cover;
 }
 
 .carousel-caption {
-  background-color: rgba(0, 0, 0, 0.6); /* Fond sombre pour le texte */
-  top: 0; /* Position en haut */
-  bottom: 0; /* Position en bas */
-  left: 0; /* Position à gauche */
-  right: 0; /* Position à droite */
-  display: flex; /* Active le modèle de boîte flexible */
+  background-color: rgba(0, 0, 0, 0.6);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
   align-items: center; /* Centre verticalement */
   justify-content: center; /* Centre horizontalement */
   text-align: center; /* Centre le texte */
-  color: #fff; /* Couleur blanche pour le texte */
-  padding: 1rem; /* Ajoute un peu d'espace autour du texte */
+  color: #fff;
+  padding: 1rem;
 }
 
 .sect-carousel .carousel-indicators button {
